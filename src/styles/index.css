@@ -18,15 +18,14 @@ code {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 1px;
-    word-spacing: 1px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
 }
 
 p, a {
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     word-spacing: 1px;
-    color: rgba(0, 0, 0, .8);
     text-decoration: none;
 }
 
