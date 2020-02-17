@@ -1,7 +1,9 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import LogRocket from "logrocket";
 import * as Sentry from "@sentry/browser";
+import Header from "./components/Header";
+import Intro from "./components/Intro";
 
 
 function App() {
@@ -15,39 +17,10 @@ function App() {
     }
 
     return (
-        <div className="App">
-            <nav className={'nav'}>
-                <div className={'navWrapper'}>
-                    <a href="#home">Home</a>
-                    <a href="#intro">Intro</a>
-                    <a href="#services">Leistungen</a>
-                    <a href="#prices">Preise</a>
-                    <a href="#contact">Kontakt</a>
-                </div>
-            </nav>
-            <header className={'header'} id={'home'}>
-                <div className={'headerContainer'}>
-                    <div className={'headerWrapper'}>
-                        <div className={'headerContent'}>
-                            <h1><span>Saim</span>Mobile Physiotherapie</h1>
-                            <hr/>
-                            <div className={'headerParagraph'}>
-                                <p>{new Date().getFullYear() - 1999} Jahre Erfahrung</p>
-                                <p>Faranak Nokhbehzaeem</p>
-                            </div>
-                        </div>
-                        <picture className={'picture'}>
-                            <source srcSet={require('./img/faranak.webp')} type={'image/webp'}/>
-                            <source srcSet={require('./img/faranak.png')} type={'image/png'}/>
-                            <img src={require('./img/faranak.png')} alt=""/>
-                        </picture>
-                    </div>
-                </div>
-            </header>
-            <section className={'intro'} id={'intro'}>
-
-            </section>
-        </div>
+        <React.Fragment>
+            <Header/>
+            <Intro/>
+        </React.Fragment>
     );
 }
 
