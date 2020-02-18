@@ -35,11 +35,10 @@
 
 .nav {
     width: 90%;
-    //margin-bottom: auto;
-    margin-top: 2rem;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    padding-top: 1rem;
 }
 
 .nav *:not(:last-child) {
@@ -70,8 +69,15 @@
 }
 
 .nav a:hover:before {
-    background-color: green;
+    background-color: var(--custom-green);
     width: 100%;
+}
+
+.helper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 4rem;
 }
 
 .h1,
@@ -108,15 +114,20 @@
     color: white;
     display: flex;
     flex-flow: column nowrap;
-    //margin-top: auto;
     align-self: flex-start;
     padding: 0 2rem;
-    margin-bottom: 1rem;
 }
 
 .icons a {
     margin: 1rem 0;
     border: 1px solid transparent;
+    transition: transform .2s ease-in-out, color .3s ease-in-out;
+}
+
+.icons a:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: var(--custom-green);
 }
 
 .right {

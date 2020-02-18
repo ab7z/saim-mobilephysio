@@ -19,19 +19,21 @@ const Header = () => {
                             <a href="">Preise</a>
                             <a href="">Kontakt</a>
                         </nav>
-                        <h1 children={"Saim Mobile Physiotherapie"}
-                            className={styles.h1}
-                        />
-                        <h2 children={"Privat"}
-                            className={styles.h2}
-                        />
-                        <div className={styles.subHeading}>
-                            <div>
-                                <p>{new Date().getFullYear() - 1999} Jahre Berufserfahrung</p>
-                            </div>
-                            <div>
-                                <p>Staatlich anerkannte Manualtherapeutin, Physiotherapeutin, Ödemtherapeutin und
-                                    Personal Trainerin</p>
+                        <div className={styles.helper}>
+                            <h1 children={"Saim Mobile Physiotherapie"}
+                                className={styles.h1}
+                            />
+                            <h2 children={"Privat"}
+                                className={styles.h2}
+                            />
+                            <div className={styles.subHeading}>
+                                <div>
+                                    <p>{new Date().getFullYear() - 1999} Jahre Berufserfahrung</p>
+                                </div>
+                                <div>
+                                    <p>Staatlich anerkannte Manualtherapeutin, Physiotherapeutin, Ödemtherapeutin und
+                                        Personal Trainerin</p>
+                                </div>
                             </div>
                         </div>
                         <div className={styles.icons}>
