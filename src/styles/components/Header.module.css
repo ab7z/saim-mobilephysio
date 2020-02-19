@@ -164,9 +164,9 @@
     }
 
     .right {
-        grid-column: 4/-1;
+        grid-column: 3/-1;
         grid-row: 1/-1;
-        height: 50vh;
+        height: 60vh;
         align-self: end;
         margin-bottom: 0;
         background-image: url("../../img/f.png");
