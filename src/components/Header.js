@@ -7,13 +7,13 @@ import {faEnvelope} from "@fortawesome/free-solid-svg-icons/faEnvelope";
 const Header = () => {
     return (
         <React.Fragment>
-            <header className={styles.wrapper}>
+            <header className={styles.wrapper} id={'home'}>
                 <div className={styles.left}>
                     <div className={styles.svg}/>
                     <div className={styles.container}>
                         <nav className={styles.nav}>
                             <img src={require('../img/logo.svg')} alt="logo" width={50} height={50}/>
-                            <a href="">Home</a>
+                            <a href="#home">Home</a>
                             <a href="">Über mich</a>
                             <a href="">Leistungen</a>
                             <a href="">Preise</a>
@@ -37,8 +37,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className={styles.icons}>
-                            <a><FontAwesomeIcon icon={faPhone} size={'2x'}/></a>
-                            <a><FontAwesomeIcon icon={faEnvelope} size={'2x'}/></a>
+                            <a href={"tel:+4915785908915"}><FontAwesomeIcon icon={faPhone} size={'2x'}/></a>
+                            <a href={'mailto:info@saim-mobilephysio.de'}><FontAwesomeIcon icon={faEnvelope} size={'2x'}/></a>
                         </div>
                     </div>
                 </div>
