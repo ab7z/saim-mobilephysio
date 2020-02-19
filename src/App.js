@@ -4,6 +4,7 @@ import LogRocket from "logrocket";
 import * as Sentry from "@sentry/browser";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
+import Services from "./components/Services";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <React.Fragment>
             <Header/>
             <Intro/>
+            <Services/>
         </React.Fragment>
     );
 }
