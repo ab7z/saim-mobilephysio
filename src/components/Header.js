@@ -14,7 +14,7 @@ const Header = () => {
                         <nav className={styles.nav}>
                             <img src={require('../img/logo.svg')} alt="logo" width={50} height={50}/>
                             <a href="#home">Home</a>
-                            <a href="">Über mich</a>
+                            <a href="#intro">Über mich</a>
                             <a href="">Leistungen</a>
                             <a href="">Preise</a>
                             <a href="">Kontakt</a>

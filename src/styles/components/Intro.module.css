@@ -1,7 +1,116 @@
 .intro {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
 
+.intro p {
+    color: black;
 }
 
 .wrapper {
+    grid-column: 1/-1;
+    align-self:  center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content:  space-evenly;
+    margin-top: 2rem;
+}
 
+.heading, .desc1, .desc2 {
+    flex: 0 0 28%;
+}
+
+.heading {
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+    transform: translateY(-70px);
+}
+
+.heading:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 2rem;
+}
+
+.desc2 {
+    align-self: flex-end;
+    transform: translateY(110px);
+}
+
+@media (max-width: 768px) {
+    .heading {
+        align-self: flex-start;
+        transform: translateY(0);
+    }
+
+    .heading:before {
+        left: -1rem;
+        width: 80%;
+    }
+
+    .heading h2 {
+        text-align: left;
+    }
+
+    .desc2 {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        flex-direction: column;
+        width: 90%;
+        justify-self: center;
+    }
+
+    .wrapper p {
+        line-height: 1.5rem;
+    }
+
+    .heading {
+        align-self: center;
+        margin: 2.5rem 0 2rem;
+    }
+
+    .heading:before {
+        width: 140%;
+        left: -3rem;
+    }
+
+    .desc1 {
+        margin: 1rem 0;
+        text-align: left;
+    }
+
+    .desc2 {
+        text-align: right;
+        margin: 1rem 0 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        margin: 0 auto;
+    }
+
+    .heading:before {
+        width: 110%;
+        left: -1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .intro {
+        padding: 2rem 0;
+    }
 }
