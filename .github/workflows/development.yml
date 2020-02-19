@@ -18,7 +18,7 @@ jobs:
         run: npm install
       - name: Build 
         run: npm run build
-      - name: Deploy to Production
+      - name: Deploy to Development
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting:dev
