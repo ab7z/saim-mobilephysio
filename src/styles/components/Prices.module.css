@@ -1,0 +1,140 @@
+.prices {
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.prices p, .prices a {
+    color: rgba(0, 0, 0, .7);
+}
+
+.wrapper {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.heading {
+    position: relative;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+.heading:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: -2rem;
+}
+
+.pricing {
+    display: grid;
+    grid-template-rows: 70px auto 70px;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 1rem;
+}
+
+.pricing > p:first-of-type {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    align-self: start;
+}
+
+.pricing > p:last-of-type {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    align-self: end;
+}
+
+.pricing > div {
+    grid-row: 2/3;
+    grid-column: 2/6;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.rect {
+    width: 300px;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 1rem 0;
+    border-radius: 10px;
+}
+
+.rect p {
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+.rect:last-of-type {
+}
+
+.effect5 {
+    position: relative;
+}
+
+.effect5:before, .effect5:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    box-shadow: 0 20px 20px #777;
+    transform: rotate(-8deg);
+}
+
+.effect5:after {
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
+}
+
+@media (max-width: 768px) {
+    .pricing > div {
+        grid-column: 1/-1;
+    }
+
+    .rect {
+        height: auto;
+    }
+}
+
+@media (max-width: 742px) {
+    .rect:first-of-type {
+        margin-bottom: 2rem;
+    }
+
+    .heading:before {
+        left: -1rem;
+        width: 35%;
+    }
+}
+
+@media (max-width: 400px) {
+    .heading:before {
+        left: -.5rem;
+        width: 45%;
+    }
+
+    .rect {
+        width: 90%;
+    }
+}
