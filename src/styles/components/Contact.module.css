@@ -1,0 +1,98 @@
+.contact {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2rem 0;
+    margin-bottom: 7rem;
+    background-color: black;
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 10rem;
+    align-self: flex-end;
+}
+
+.heading:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 120%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 4rem;
+}
+
+.rect {
+    border: 1px solid rgba(255, 255, 255, .7);
+    flex: 0 0 30%;
+    display: flex;
+}
+
+.rect > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rect > div:first-of-type {
+    width: 30%;
+    border-right: 1px solid rgba(255, 255, 255, .7);
+}
+
+.rect > div:last-of-type {
+    width: 70%;
+}
+
+.rect > div svg {
+    color: rgba(255, 255, 255, .7);
+    padding: .8rem 0;
+    text-align: center;
+}
+
+a:hover {
+    color: green;
+}
+
+@media (max-width: 1115px) {
+    .container {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .rect:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        margin-right: 6rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .rect > div > p,a {
+        font-size: .8rem;
+    }
+}

@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Services from "./components/Services";
 import Prices from "./components/Prices";
+import Contact from "./components/Contact";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Intro/>
             <Services/>
             <Prices/>
+            <Contact/>
         </React.Fragment>
     );
 }

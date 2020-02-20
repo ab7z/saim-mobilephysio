@@ -88,13 +88,13 @@
 
 .contact a {
     margin-left: 2rem;
-    transition: transform .2s .2s ease-in-out, color .3s ease-in-out;
+    transition: transform .2s ease-in-out;
+    color: var(--custom-green);
 }
 
 .contact a:hover {
     cursor: pointer;
     transform: scale(1.2);
-    color: var(--custom-green);
 }
 
 .contact p {
