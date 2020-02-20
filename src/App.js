@@ -2,12 +2,10 @@ import React from 'react';
 import './styles/App.css';
 import LogRocket from "logrocket";
 import * as Sentry from "@sentry/browser";
-import Header from "./components/Header";
-import Intro from "./components/Intro";
-import Services from "./components/Services";
-import Prices from "./components/Prices";
-import Contact from "./components/Contact";
-
+import {HashRouter, Route} from 'react-router-dom';
+import Home from "./pages/Home";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 function App() {
     if (process.env.NODE_ENV === 'production') {
@@ -20,13 +18,17 @@ function App() {
     }
 
     return (
-        <React.Fragment>
-            <Header/>
-            <Intro/>
-            <Services/>
-            <Prices/>
-            <Contact/>
-        </React.Fragment>
+        <HashRouter>
+            <Route exact path={"/"}>
+                <Home/>
+            </Route>
+            <Route path={"/privacy"}>
+                <Privacy/>
+            </Route>
+            <Route path={"/terms"}>
+                <Terms/>
+            </Route>
+        </HashRouter>
     );
 }
 
