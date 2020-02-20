@@ -3,6 +3,7 @@ import styles from '../styles/components/Header.module.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons/faEnvelope";
+import Navbar from "./Navbar";
 
 const Header = () => {
     return (
@@ -11,14 +12,7 @@ const Header = () => {
                 <div className={styles.left}>
                     <div className={styles.svg}/>
                     <div className={styles.container}>
-                        <nav className={styles.nav}>
-                            <img src={require('../img/logo.svg')} alt="logo" width={50} height={50}/>
-                            <a href="#home">Home</a>
-                            <a href="#intro">Über mich</a>
-                            <a href="#services">Leistungen</a>
-                            <a href="#prices">Preise</a>
-                            <a href="#contact">Kontakt</a>
-                        </nav>
+                        <Navbar/>
                         <div className={styles.helper}>
                             <h1 children={"Saim Mobile Physiotherapie"}
                                 className={styles.h1}

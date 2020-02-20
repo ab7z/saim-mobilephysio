@@ -1,0 +1,45 @@
+.nav {
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 1rem 0 0 2rem;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+
+.nav *:not(:last-child) {
+    margin-right: 5rem;
+}
+
+.nav li {
+    font-size: .8rem;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 0 5px;
+    position: relative;
+    color: rgba(255, 255, 255, .8);
+    transition: transform .4s;
+}
+
+.nav li:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    position: absolute;
+    background-color: transparent;
+    bottom: 0;
+    transition: width .4s ease-in-out;
+}
+
+.nav li:hover {
+    transform: scale(1.1);
+    color: white;
+    cursor: pointer;
+}
+
+.nav li:hover:before {
+    background-color: var(--custom-green);
+    width: 100%;
+}

@@ -33,48 +33,6 @@
     align-items: center;
 }
 
-.nav {
-    width: 90%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    padding-top: 1rem;
-    justify-content: space-between;
-}
-
-.nav *:not(:last-child) {
-    margin-right: 5rem;
-}
-
-.nav a {
-    font-size: .8rem;
-    /*display: contents;*/
-    text-decoration: none;
-    padding: 10px 0 5px;
-    position: relative;
-    transition: transform .4s;
-}
-
-.nav a:before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    position: absolute;
-    background-color: transparent;
-    bottom: 0;
-    transition: width .4s ease-in-out;
-}
-
-.nav a:hover {
-    transform: scale(1.1);
-}
-
-.nav a:hover:before {
-    background-color: var(--custom-green);
-    width: 100%;
-}
-
 .helper {
     display: flex;
     flex-flow: column nowrap;
