@@ -5,6 +5,7 @@ import * as Sentry from "@sentry/browser";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Services from "./components/Services";
+import Prices from "./components/Prices";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Header/>
             <Intro/>
             <Services/>
+            <Prices/>
         </React.Fragment>
     );
 }
