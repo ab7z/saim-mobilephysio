@@ -16,8 +16,8 @@ const Header = () => {
                             <a href="#home">Home</a>
                             <a href="#intro">Über mich</a>
                             <a href="#services">Leistungen</a>
-                            <a href="">Preise</a>
-                            <a href="">Kontakt</a>
+                            <a href="#prices">Preise</a>
+                            <a href="#contact">Kontakt</a>
                         </nav>
                         <div className={styles.helper}>
                             <h1 children={"Saim Mobile Physiotherapie"}
