@@ -43,3 +43,16 @@
     background-color: var(--custom-green);
     width: 100%;
 }
+
+@media (max-width: 1200px) {
+    .nav li {
+        font-size: .7rem;
+        display: contents;
+    }
+}
+
+@media (max-width: 425px) {
+    .nav li {
+        display: none;
+    }
+}

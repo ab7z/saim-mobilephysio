@@ -7,7 +7,7 @@ const Prices = () => {
         <React.Fragment>
             <section className={styles.prices} id={'prices'}>
                 <div className={styles.wrapper}>
-                    <h2 className={styles.heading}>Preise &mdash; 120€ pro 60 Sekunden</h2>
+                    <h2 className={styles.heading}>Preise &mdash; 120€ pro 60 Minuten</h2>
                     <div>
                         <p>Ich bin eine Privat­praxis und habe keinen Vertrag mit einer gesetz­lichen Kranken­kas­se.
                             Ich stelle meine Rech­nung direkt an Sie als Patient und Sie reichen diese an Ihre private
