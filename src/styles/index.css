@@ -1,6 +1,6 @@
 :root {
     --header-height: 80vh;
-    --custom-green: seagreen;
+    --custom-green: #2cab29;
 }
 
 body {
@@ -35,6 +35,8 @@ p, a {
     color: white;
 }
 
-a:hover {
-
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
 }
