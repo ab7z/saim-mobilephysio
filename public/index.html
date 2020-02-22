@@ -39,5 +39,24 @@
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAgiIGqAYfoO28aKISdD-t4GayV5pvFXqI",
+        authDomain: "mobilephysio-a5b4b.firebaseapp.com",
+        databaseURL: "https://mobilephysio-a5b4b.firebaseio.com",
+        projectId: "mobilephysio-a5b4b",
+        storageBucket: "mobilephysio-a5b4b.appspot.com",
+        messagingSenderId: "955445776021",
+        appId: "1:955445776021:web:1e8fab1b71b49e945c959c",
+        measurementId: "G-1QSM3GMTPV"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
 </body>
 </html>
