@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styles from '../styles/pages/Terms.module.css';
 import Footer from "../components/Footer";
 
 const Terms = () => {
+    useEffect(() => {
+        window.scrollTo({left: 0, top: 0, behavior: "auto"});
+    }, []);
+
     return (
         <React.Fragment>
             <main className={styles.main}>
