@@ -128,9 +128,18 @@
     .description {
         justify-content: flex-start;
     }
+
+    .picture {
+        margin-left: 1rem;
+    }
+
+    .picture img {
+        width: 140%;
+        height: 35vh;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .picture {
         margin-left: 1rem;
     }
