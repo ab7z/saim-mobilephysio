@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="156" height="154"><g><title>background</title><rect id="canvas_background" width="158" height="156" x="-1" y="-1" fill="#000"/><g id="canvasGrid" width="100%" height="100%" x="0" y="0" display="none"><rect width="100%" height="100%" x="0" y="0" fill="url(#gridpattern)" stroke-width="0"/></g></g><g><title>Layer 1</title><ellipse id="svg_1" cx="78" cy="77" fill="#fff" stroke="#000" stroke-width="8.5" rx="74" ry="73"/><text id="svg_2" x="185.627" y="131.869" fill="#000" stroke="#000" stroke-opacity="null" stroke-width="0" font-family="Helvetica, Arial, sans-serif" font-size="43" font-weight="bold" text-anchor="start" transform="matrix(2.88313, 0, 0, 2.41423, -498.533, -207.216)" xml:space="preserve">S</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="156" height="154">
+    <path d="M-1-1h158v156H-1z"/>
+    <g>
+        <ellipse cx="78" cy="77" fill="#fff" stroke="#000" stroke-width="8.5" rx="74" ry="73"/>
+        <text x="186" y="132" stroke="#000" stroke-opacity="null" stroke-width="0"
+              font-family="Helvetica, Arial, sans-serif" font-size="43" font-weight="bold"
+              transform="matrix(2.88313 0 0 2.41423 -499 -207)">S
+        </text>
+    </g>
+</svg>

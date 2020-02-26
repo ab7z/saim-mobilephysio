@@ -5,7 +5,7 @@ import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons/faEnvelope";
 import Navbar from "./Navbar";
 
-const Header = () => {
+const Header = (props) => {
     return (
         <React.Fragment>
             <header className={styles.wrapper} id={'home'}>
@@ -32,11 +32,12 @@ const Header = () => {
                         </div>
                         <div className={styles.icons}>
                             <a href={"tel:+4915785908915"}><FontAwesomeIcon icon={faPhone} size={'2x'}/></a>
-                            <a href={'mailto:info@saim-mobilephysio.de'}><FontAwesomeIcon icon={faEnvelope} size={'2x'}/></a>
+                            <a href={'mailto:info@saim-mobilephysio.de'}><FontAwesomeIcon icon={faEnvelope}
+                                                                                          size={'2x'}/></a>
                         </div>
                     </div>
                 </div>
-                <div className={styles.right}/>
+                <div className={[styles.right, (props.isWebpEnable ? styles.right_webp : styles.right_png)].join(' ')}/>
             </header>
         </React.Fragment>
     )

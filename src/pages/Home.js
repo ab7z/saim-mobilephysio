@@ -6,14 +6,14 @@ import Prices from "../components/Prices";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const Home = (props) => {
     useEffect(() => {
         window.scrollTo({left: 0, top: 0, behavior: "auto"});
     }, []);
 
     return (
         <React.Fragment>
-            <Header/>
+            <Header isWebpEnable={props.isWebpEnable}/>
             <Intro/>
             <Services/>
             <Prices/>
