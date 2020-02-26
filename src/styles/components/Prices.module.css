@@ -7,6 +7,10 @@
     color: rgba(0, 0, 0, .7);
 }
 
+.p {
+    line-height: 1.6rem;
+}
+
 .wrapper {
     width: 90%;
     height: auto;

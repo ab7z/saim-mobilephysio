@@ -9,7 +9,8 @@ const Prices = () => {
                 <div className={styles.wrapper}>
                     <h2 className={styles.heading}>Preise &mdash; 120€ pro 60 Minuten</h2>
                     <div>
-                        <p>Ich bin eine Privat­praxis und habe keinen Vertrag mit einer gesetz­lichen Kranken­kas­se.
+                        <p className={styles.p}>Ich bin eine Privat­praxis und habe keinen Vertrag mit einer
+                            gesetz­lichen Kranken­kas­se.
                             Ich stelle meine Rech­nung direkt an Sie als Patient und Sie reichen diese an Ihre private
                             Kran­ken­ver­sich­erung (PKV) zur Er­stat­tung weiter. Ihre Ver­sicher­ung er­stat­tet
                             ent­spre­chend die ver­ord­neten Kosten.

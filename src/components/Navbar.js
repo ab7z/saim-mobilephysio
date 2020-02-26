@@ -16,27 +16,30 @@ const Navbar = () => {
     return (
         <React.Fragment>
             <nav className={styles.nav}>
-                <img src={require('../img/logo.svg')} alt="logo" width={50} height={50}/>
-                <li onClick={() => {
-                    scroll('home')
-                }}>Home
-                </li>
-                <li onClick={() => {
-                    scroll('intro')
-                }}>Über mich
-                </li>
-                <li onClick={() => {
-                    scroll('services')
-                }}>Leistungen
-                </li>
-                <li onClick={() => {
-                    scroll('prices')
-                }}>Preise
-                </li>
-                <li onClick={() => {
-                    scroll('contact')
-                }}>Kontakt
-                </li>
+                <ul className={styles.ul}>
+                    <li className={styles.li}
+                        children={<img src={require('../img/logo.svg')} alt="logo" width={50} height={50}/>}/>
+                    <li className={styles.li} onClick={() => {
+                        scroll('home')
+                    }}>Home
+                    </li>
+                    <li className={styles.li} onClick={() => {
+                        scroll('intro')
+                    }}>Über mich
+                    </li>
+                    <li className={styles.li} onClick={() => {
+                        scroll('services')
+                    }}>Leistungen
+                    </li>
+                    <li className={styles.li} onClick={() => {
+                        scroll('prices')
+                    }}>Preise
+                    </li>
+                    <li className={styles.li} onClick={() => {
+                        scroll('contact')
+                    }}>Kontakt
+                    </li>
+                </ul>
             </nav>
         </React.Fragment>
     );
