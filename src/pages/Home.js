@@ -12,10 +12,15 @@ const Home = (props) => {
 
         const serviceSection = document.querySelector('#services'),
             picture = serviceSection.querySelector('picture'),
-            options = {},
+            options = {
+                root: null,
+                threshold: 0,
+                rootMargin: "250px"
+            },
             observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (window.getComputedStyle(picture).display === 'none' && entry.isIntersecting && window.innerWidth > 740) {
+                        console.log('demo');
                         picture.style.display = 'unset';
                     }
                 })
