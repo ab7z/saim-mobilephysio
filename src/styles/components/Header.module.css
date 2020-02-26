@@ -111,7 +111,7 @@
     background-position: center top;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
     .wrapper {
         height: 90vh;
     }
@@ -124,8 +124,10 @@
     .right {
         grid-column: 3/-1;
         grid-row: 1/-1;
+        width: 50vw;
         height: calc(100% - 30vh);
         align-self: end;
+        justify-self: end;
         margin-bottom: 0;
     }
 

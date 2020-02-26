@@ -114,6 +114,10 @@
         margin: 1rem 0 2rem;
     }
 
+    .li {
+        text-align: left;
+    }
+
     .intro {
         margin: 2rem 0;
     }
