@@ -39,7 +39,7 @@ const Header = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className={[styles.right, (props.isWebpEnable ? styles.right_webp : styles.right_png)].join(' ')}/>
+                <div className={[styles.right, (props.isWebpEnable ? styles.right_webp : styles.right_jp2)].join(' ')}/>
             </header>
         </React.Fragment>
     )

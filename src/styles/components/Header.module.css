@@ -97,8 +97,8 @@
     margin-bottom: -10vh;
 }
 
-.right_png {
-    background-image: url("../../img/f.png");
+.right_jp2 {
+    background-image: url("../../img/f.jp2");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
