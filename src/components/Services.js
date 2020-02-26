@@ -39,10 +39,11 @@ const Services = () => {
                         </div>
                         <div className={styles.contact}>
                             <p>Nimm Kontakt auf</p>
-                            <a href={"tel:+4915785908915"}>
+                            <a href={"tel:+4915785908915"} rel={"noopener noreferrer"} aria-label={"Telefonnummer"}>
                                 <FontAwesomeIcon icon={faPhone} size={'2x'}/>
                             </a>
-                            <a href={'mailto:info@saim-mobilephysio.de'}>
+                            <a href={'mailto:info@saim-mobilephysio.de'} rel={"noopener noreferrer"}
+                               aria-label={"E-Mail Adresse"}>
                                 <FontAwesomeIcon icon={faEnvelope} size={'2x'}/>
                             </a>
                         </div>

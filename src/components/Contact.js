@@ -16,7 +16,8 @@ const Contact = () => {
                             <FontAwesomeIcon icon={faPhone} size={'2x'}/>
                         </div>
                         <div>
-                            <a href="tel:+4915785908915">+49 157 85 90 8915</a>
+                            <a href="tel:+4915785908915" rel={"noopener noreferrer"} aria-label={"Telefonnummer"}>+49
+                                157 85 90 8915</a>
                         </div>
                     </div>
                     <div className={styles.rect}>
@@ -24,7 +25,8 @@ const Contact = () => {
                             <FontAwesomeIcon icon={faEnvelope} size={'2x'}/>
                         </div>
                         <div>
-                            <a href="mailto:info@saim-mobilephysio.de">info@saim-mobilephysio.de</a>
+                            <a href="mailto:info@saim-mobilephysio.de" rel={"noopener noreferrer"}
+                               aria-label={"E-Mail Adresse"}>info@saim-mobilephysio.de</a>
                         </div>
                     </div>
                     <div className={styles.rect}>
@@ -34,7 +36,8 @@ const Contact = () => {
                         <div>
                             <a href={'https://www.google.de/maps/place/Sankt+Augustin+Zentrum/@50.7768778,7.1532109,13z' +
                             '/data=!4m5!3m4!1s0x47bee743b959f025:0xcddcf985aab0d659!8m2!3d50.7768778!4d7' +
-                            '.1882297'} target={'_blank'}>30 km um St. Augustin</a>
+                            '.1882297'} target={'_blank'} rel={"noopener noreferrer"}
+                               aria-label={"Adresse aif Google Map"}>30 km um St. Augustin</a>
                         </div>
                     </div>
                 </div>

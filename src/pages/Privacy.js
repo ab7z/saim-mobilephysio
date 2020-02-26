@@ -83,8 +83,10 @@ const Privacy = () => {
                         Wacholderweg 6<br/>
                         53757 St. Augustin</p>
 
-                    <p>Telefon: <a href="tel:+4915785908915">0157 / 85908915</a><br/>
-                    E-Mail:<a href="mailto:info@saim-mobilephysio.de">info@saim-mobilephysio.de</a></p>
+                    <p>Telefon: <a href="tel:+4915785908915" rel={"noopener noreferrer"} aria-label={"Telefinnummer"}>0157
+                        / 85908915</a><br/>
+                        E-Mail:<a href="mailto:info@saim-mobilephysio.de" rel={"noopener noreferrer"}
+                                  aria-label={"E-Mail Adresse"}>info@saim-mobilephysio.de</a></p>
 
                     <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam
                         mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B.

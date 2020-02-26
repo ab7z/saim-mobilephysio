@@ -22,23 +22,28 @@ const Terms = () => {
 
                     <p><strong>Kontakt</strong></p>
 
-                    <p>Telefon: <a href="tel:+4915785908915">0157 / 85908915</a></p>
-                    <p>E-Mail:<a href="mailto:info@saim-mobilephysio.de">info@saim-mobilephysio.de</a></p>
+                    <p>Telefon: <a href="tel:+4915785908915" rel={"noopener noreferrer"} aria-label={"Telefonnummer"}>0157
+                        / 85908915</a></p>
+                    <p>E-Mail:<a href="mailto:info@saim-mobilephysio.de" rel={"noopener noreferrer"}
+                                 aria-label={"E-Mail Adresse"}>info@saim-mobilephysio.de</a></p>
 
                     <p><strong>Berufsbezeichnung und berufsrechtliche Regelungen</strong></p>
 
                     <p>Berufsbezeichnung: Physiotherapeutin<br/>
                         Verliehen durch:
-                        <a href="https://daa-nordrhein.de/physiotherapie/schule-bonn/" target="_blank" rel="noopener noreferrer">DAA Bonn</a> am
+                        <a href="https://daa-nordrhein.de/physiotherapie/schule-bonn/" target="_blank"
+                           rel="noopener noreferrer" aria-label={"DAA Bonn"}>DAA Bonn</a> am
                         19.04.2011<br/>
                         Zuständige Kammer:
-                        <a href="https://nrw.physio-deutschland.de/landesverband-nrw.html" target="_blank" rel="noopener noreferrer">Deutscher
+                        <a href="https://nrw.physio-deutschland.de/landesverband-nrw.html" target="_blank"
+                           rel="noopener noreferrer" aria-label={"Deutscher Verband für Physiotherapie (ZVK)"}>Deutscher
                             Verband für Physiotherapie (ZVK)</a><br/>
                         Es gelten folgende berufsrechtliche Regelungen: Gesetz über die Berufe in der Physiotherapie
                         (MPhG)<br/>
                         Regelungen einsehbar unter:
                         <a href="https://www.gesetze-im-internet.de/mphg/BJNR108400994.html" rel="noopener noreferrer"
-                           target="_blank">https://www.gesetze-im-internet.de/mphg/BJNR108400994.html</a></p>
+                           target="_blank"
+                           aria-label={"Gestze"}>https://www.gesetze-im-internet.de/mphg/BJNR108400994.html</a></p>
 
                     <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</strong></p>
 

@@ -31,9 +31,11 @@ const Header = (props) => {
                             </div>
                         </div>
                         <div className={styles.icons}>
-                            <a href={"tel:+4915785908915"}><FontAwesomeIcon icon={faPhone} size={'2x'}/></a>
-                            <a href={'mailto:info@saim-mobilephysio.de'}><FontAwesomeIcon icon={faEnvelope}
-                                                                                          size={'2x'}/></a>
+                            <a href={"tel:+4915785908915"} rel={"noopener noreferrer"}
+                               aria-label={"Telefonnummer"}><FontAwesomeIcon icon={faPhone} size={'2x'}/></a>
+                            <a href={'mailto:info@saim-mobilephysio.de'} rel={"noopener noreferrer"}
+                               aria-label={"E-Mail Adresse"}><FontAwesomeIcon icon={faEnvelope}
+                                                                              size={'2x'}/></a>
                         </div>
                     </div>
                 </div>

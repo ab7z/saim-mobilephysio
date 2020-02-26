@@ -34,7 +34,9 @@ const Prices = () => {
                     </div>
                     <div>
                         <p><b>Füllen Sie vor Ihrer ersten Behandlung bitte das <a href={PDF}
-                        target={'_blank'}><i><u>Anmeldeformular</u></i></a> aus.
+                                                                                  target={'_blank'}
+                                                                                  rel={"noopener noreferrer"}
+                                                                                  aria-label={"Anmeldeformular in PDF Format"}><i><u>Anmeldeformular</u></i></a> aus.
                         </b></p>
                     </div>
                 </div>
