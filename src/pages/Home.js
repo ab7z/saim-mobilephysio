@@ -9,6 +9,19 @@ import Footer from "../components/Footer";
 const Home = (props) => {
     useEffect(() => {
         window.scrollTo({left: 0, top: 0, behavior: "auto"});
+
+        const serviceSection = document.querySelector('#services'),
+            picture = serviceSection.querySelector('picture'),
+            options = {},
+            observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (window.getComputedStyle(picture).display === 'none' && entry.isIntersecting && window.innerWidth > 740) {
+                        picture.style.display = 'unset';
+                    }
+                })
+            }, options);
+
+        observer.observe(serviceSection);
     }, []);
 
     return (
