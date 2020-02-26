@@ -20,8 +20,8 @@ const Home = (props) => {
             observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (window.getComputedStyle(picture).display === 'none' && entry.isIntersecting && window.innerWidth > 740) {
-                        console.log('demo');
                         picture.style.display = 'unset';
+                        observer.unobserve(entry.target);
                     }
                 })
             }, options);
