@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './styles/App.css';
 import LogRocket from "logrocket";
 import * as Sentry from "@sentry/browser";
-import {HashRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from "./pages/Home";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -40,17 +40,21 @@ function App() {
     check_webp_feature(setWebpFunctionality);
 
     return (
-        <HashRouter>
-            <Route exact path={"/"}
-                   render={(props) => <Home {...props} isWebpEnable={isWebpEnable}/>}
-            />
-            <Route path={"/privacy"}>
-                <Privacy/>
-            </Route>
-            <Route path={"/terms"}>
-                <Terms/>
-            </Route>
-        </HashRouter>
+        <BrowserRouter>
+            <div className={ "App" }>
+                <Switch>
+                    <Route exact={ true } path={ "/" }
+                        render={ (props) => <Home { ...props } isWebpEnable={ isWebpEnable } /> }
+                    />
+                    <Route exact={ true } path={ "/privacy" }>
+                        <Privacy />
+                    </Route>
+                    <Route exact={ true } path={ "/terms" }>
+                        <Terms />
+                    </Route>
+                </Switch>
+            </div>
+        </BrowserRouter>
     );
 }
 
