@@ -1,6 +1,5 @@
 import React from "react";
 import styles from '../styles/components/Prices.module.css';
-import PDF from '../media/Anmeldung_2019.pdf';
 
 const Prices = () => {
     return (
