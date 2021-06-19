@@ -5,6 +5,7 @@ import Services from "../components/Services";
 import Prices from "../components/Prices";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Form from "../components/Form";
 
 const Home = (props) => {
     useEffect(() => {
@@ -35,6 +36,7 @@ const Home = (props) => {
             <Intro/>
             <Services/>
             <Prices/>
+            <Form/>
             <Contact/>
             <Footer/>
         </React.Fragment>

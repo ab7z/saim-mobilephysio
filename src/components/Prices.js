@@ -16,6 +16,7 @@ const Prices = () => {
                             ent­spre­chend die ver­ord­neten Kosten.
                         </p>
                         <p>Die The­rapie­dauer be­trägt 60 Minuten.</p>
+                    {/* TODO: text aus dem bild hier rein tun als unterseite */}
                     </div>
                     <div className={styles.pricing}>
                         <p>Es gibt zwei Mög­lich­kei­ten:</p>
@@ -31,13 +32,6 @@ const Prices = () => {
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <p><b>Füllen Sie vor Ihrer ersten Behandlung bitte das <a href={PDF}
-                                                                                  target={'_blank'}
-                                                                                  rel={"noopener noreferrer"}
-                                                                                  aria-label={"Anmeldeformular in PDF Format"}><i><u>Anmeldeformular</u></i></a> aus.
-                        </b></p>
                     </div>
                 </div>
             </section>

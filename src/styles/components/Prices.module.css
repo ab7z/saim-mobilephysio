@@ -1,5 +1,5 @@
 .prices {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
     width: 100%;
 }
 
@@ -41,9 +41,7 @@
 
 .pricing {
     display: grid;
-    grid-template-rows: 70px auto 70px;
     grid-template-columns: repeat(6, 1fr);
-    margin-bottom: 1rem;
 }
 
 .pricing > p:first-of-type {
