@@ -1,0 +1,50 @@
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: black;
+}
+
+.copyRight p {
+    color: rgba(255, 255, 255, .6);
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 0 2rem;
+}
+
+.links a {
+    color: rgba(255, 255, 255, .6);
+    position: relative;
+    padding-bottom: .5rem;
+    width: 226px;
+    text-align: center;
+}
+
+.links a:hover {
+    color: white;
+}
+
+.links a:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    position: absolute;
+    background-color: transparent;
+    bottom: 0;
+    transition: width .4s ease-in-out;
+}
+
+.links a:hover:before {
+    background-color: var(--custom-green);
+    width: 100%;
+}
