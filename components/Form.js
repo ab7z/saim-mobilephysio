@@ -7,7 +7,7 @@ export default function Form() {
                 <p style={ { color: 'black' } }>
                     <b>Füllen Sie vor Ihrer ersten Behandlung bitte das
                         <a style={ { color: 'black' } }
-                           href={ 'https://github.com/Bernstein7z/saim-mobilephysio/raw/master/src/media/Anmeldung_2019.pdf' }
+                           href={ 'https://github.com/Bernstein7z/saim-mobilephysio/raw/master/Anmeldung_2019.pdf' }
                            target={ '_blank' }
                            rel={ 'noopener noreferrer' }
                            aria-label={ 'Anmeldeformular in PDF Format' }>
