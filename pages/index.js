@@ -28,6 +28,7 @@ export default function Home() {
                 Hausbesuche in Sankt Augustin und Umgebung." />
                 <meta property="og:url" content="https://saim-mobilephysio.de" />
                 <meta property="og:type" content="website" />
+                <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&amp;display=swap" rel="stylesheet"/>
             </Head>
             <Header/>
             <Intro/>

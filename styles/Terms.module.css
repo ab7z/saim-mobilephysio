@@ -1,0 +1,24 @@
+.main {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    align-items: flex-start;
+}
+
+.container p {
+    color: rgba(0, 0, 0, .8);
+}
+
+.container a {
+    color: royalblue;
+}
+
+.container h1 {
+    margin-bottom: 2rem;
+}
