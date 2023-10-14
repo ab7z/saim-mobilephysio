@@ -1,52 +1,44 @@
-import styles from '../styles/components/Header.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
-import Navbar from './Navbar';
+import Image from "next/image"
+import styles from "../styles/components/Header.module.css"
 
 export default function Header() {
-    return (
-        <>
-            <header className={ styles.wrapper } id={ 'home' }>
-                <div className={ styles.left }>
-                    <div className={ styles.svg }/>
-                    <div className={ styles.container }>
-                        <Navbar/>
-                        <div className={ styles.helper }>
-                            <h1 children={ 'Saim Mobile Physiotherapie' }
-                                className={ styles.h1 }
-                            />
-                            <h2 children={ 'Privat' }
-                                className={ styles.h2 }
-                            />
-                            <div className={ styles.subHeading }>
-                                <div>
-                                    <p children={ `${ new Date().getFullYear() - 1999 } Jahre Berufserfahrung` }/>
-                                </div>
-                                <div>
-                                    <p
-                                        children={ `Staatlich anerkannte Manualtherapeutin, Physiotherapeutin,
-                                        Ödemtherapeutin und Personal Trainerin` }
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className={ styles.icons }>
-                            <a href={ 'tel:+4915785908915' }
-                               rel={ 'noopener noreferrer' }
-                               aria-label={ 'Telefonnummer' }
-                               children={ <FontAwesomeIcon icon={ faPhone } size={ '2x' }/> }
-                            />
-                            <a href={ 'mailto:info@saim-mobilephysio.de' }
-                               rel={ 'noopener noreferrer' }
-                               aria-label={ 'E-Mail Adresse' }
-                               children={ <FontAwesomeIcon icon={ faEnvelope } size={ '2x' }/> }
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div className={ styles.right }/>
-            </header>
-        </>
-    );
-};
+  return (
+    <header
+      id={"home"}
+      className={styles.header}
+    >
+      <div className={styles.hero}>
+        {/* <div className='relative'> */}
+        <Image
+          src='/header.webp'
+          alt='Dekoratives Bild mit heilenden Händen'
+          aria-label='Dekoratives Bild mit heilenden Händen'
+          priority
+          fill
+        />
+        {/* </div> */}
+      </div>
+
+      <h1 className={styles.title}>
+        <span>Saim Mobile Physiotherapie</span>
+        <span>privat &mdash; {new Date().getFullYear() - 1999} Jahre Berufserfahrung</span>
+      </h1>
+
+      <div className={styles.img_wrapper}>
+        <Image
+          src='/f.webp'
+          alt='Staatlich anerkannte Physiotherapeutin Saim'
+          aria-label='Staatlich anerkannte Physiotherapeutin Saim'
+          priority
+          quality={100}
+          fill
+          className={styles.img}
+        />
+      </div>
+
+      <p className={styles.expertise}>
+        Staatlich anerkannte Manualtherapeutin, Physiotherapeutin, Ödemtherapeutin und Personal Trainerin
+      </p>
+    </header>
+  )
+}
