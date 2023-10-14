@@ -8,7 +8,6 @@ export default function Header() {
       className={styles.header}
     >
       <div className={styles.hero}>
-        {/* <div className='relative'> */}
         <Image
           src='/header.webp'
           alt='Dekoratives Bild mit heilenden Händen'
@@ -16,7 +15,6 @@ export default function Header() {
           priority
           fill
         />
-        {/* </div> */}
       </div>
 
       <h1 className={styles.title}>
