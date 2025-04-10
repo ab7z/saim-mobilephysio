@@ -21,13 +21,13 @@ export default function Price() {
               <div className={[styles.rect, styles.effect5].join(' ')}>
                 <p>
                   Im Normal­fall (Be­hand­lung aufgrund einer Krank­heit) legen Sie mir ein Rezept von Ihrem Arzt vor. Der Preis pro
-                  The­rapie­sit­zung (60 Minuten) be­trägt in diesem Fall <b>170€</b>. Mehrwertsteuer fällt nicht an.
+                  The­rapie­sit­zung (60 Minuten) be­trägt in diesem Fall <b>190€</b>. Mehrwertsteuer fällt nicht an.
                 </p>
               </div>
               <div className={[styles.rect, styles.effect5].join(' ')}>
                 <p>
                   Wenn Sie keine Beschwerden haben, sondern präventiv (ohne ärztliche Verordnung) von mir behandelt werden möchten, liegt der Preis
-                  bei <b>190€</b> inkl. Mehrwertsteuer.
+                  bei <b>210€</b> inkl. Mehrwertsteuer.
                 </p>
               </div>
             </div>
