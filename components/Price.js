@@ -5,7 +5,7 @@ export default function Price() {
     <>
       <section className={styles.prices} id={'prices'}>
         <div className={styles.wrapper}>
-          <h2 className={styles.heading}>Preise &mdash; 170€ pro 60 Minuten</h2>
+          <h2 className={styles.heading}>Preise &mdash; 190€ pro 60 Minuten</h2>
           <div>
             <p className={styles.p}>
               Ich bin eine Privat­praxis und habe keinen Vertrag mit einer gesetz­lichen Kranken­kas­se. Ich stelle meine Rech­nung direkt an Sie als
