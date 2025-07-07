@@ -8,7 +8,7 @@ export default function Price() {
       id={'prices'}
     >
       <div className={styles.wrapper}>
-        <h2 className={styles.heading}>Preise &mdash; 190€ pro 60 Minuten</h2>
+        <h2 className={styles.heading}>Preise &mdash; 170€ pro 60 Minuten</h2>
         <div>
           <p className={styles.p}>
             Ich bin eine Privat­praxis und habe keinen Vertrag mit einer gesetz­lichen
@@ -26,13 +26,13 @@ export default function Price() {
               <p>
                 Im Normal­fall (Be­hand­lung aufgrund einer Krank­heit) legen Sie mir ein Rezept von
                 Ihrem Arzt vor. Der Preis pro The­rapie­sit­zung (60 Minuten) be­trägt in diesem
-                Fall <b>190€</b>. Mehrwertsteuer fällt nicht an.
+                Fall <b>170€</b>. Mehrwertsteuer fällt nicht an.
               </p>
             </div>
             <div className={[styles.rect, styles.effect5].join(' ')}>
               <p>
                 Wenn Sie keine Beschwerden haben, sondern präventiv (ohne ärztliche Verordnung) von
-                mir behandelt werden möchten, liegt der Preis bei <b>210€</b> inkl. Mehrwertsteuer.
+                mir behandelt werden möchten, liegt der Preis bei <b>190€</b> inkl. Mehrwertsteuer.
               </p>
             </div>
           </div>

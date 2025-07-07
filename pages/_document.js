@@ -8,10 +8,6 @@ export default function Document() {
           property='og:type'
           content='website'
         />
-        <link
-          href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto&amp;display=swap'
-          rel='stylesheet'
-        />
         <meta
           property='og:description'
           content='Saim Mobilephysio Sankt Augustin. Faranak Nokhbehzaeem ist staatlich

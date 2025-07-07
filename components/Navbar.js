@@ -23,7 +23,6 @@ export default function Navbar() {
                                 alt={ 'logo' }
                                 width={ 50 }
                                 height={ 50 }
-                                responsive={ true }
                                 quality={ 80 }
                             />
                         }

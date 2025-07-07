@@ -14,6 +14,11 @@ export default function Services() {
                         src={ service }
                         alt={ 'massage mobile physio saim' }
                         placeholder={ 'blur' }
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                            objectFit: 'cover'
+                        }}
                     />
                 </div>
                 <div className={ styles.right }>
