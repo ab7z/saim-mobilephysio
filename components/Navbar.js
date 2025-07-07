@@ -16,42 +16,45 @@ export default function Navbar() {
         <>
             <nav className={ styles.nav }>
                 <ul className={ styles.ul }>
-                    <li className={ styles.li }
-                        children={
-                            <Image
-                                src={ '/logo.svg' }
-                                alt={ 'logo' }
-                                width={ 50 }
-                                height={ 50 }
-                                quality={ 80 }
-                            />
-                        }
-                    />
+                    <li className={ styles.li }>
+                        <Image
+                            src={ '/logo.svg' }
+                            alt={ 'logo' }
+                            width={ 50 }
+                            height={ 50 }
+                            quality={ 80 }
+                        />
+                    </li>
                     <li className={ styles.li }
                         onClick={ () => scroll('home') }
                         aria-label={'Home'}
-                        children={ 'Home' }
-                    />
+                    >
+                        Home
+                    </li>
                     <li className={ styles.li }
                         onClick={ () => scroll('intro') }
                         aria-label={'Über mich'}
-                        children={ 'Über mich' }
-                    />
+                    >
+                        Über mich
+                    </li>
                     <li className={ styles.li }
                         onClick={ () => scroll('services') }
                         aria-label={'Leistungen'}
-                        children={ 'Leistungen' }
-                    />
+                    >
+                        Leistungen
+                    </li>
                     <li className={ styles.li }
                         onClick={ () => scroll('prices') }
                         aria-label={'Preise'}
-                        children={ 'Preise' }
-                    />
+                    >
+                        Preise
+                    </li>
                     <li className={ styles.li }
                         onClick={ () => scroll('contact') }
                         aria-label={'Kontakt'}
-                        children={ 'Kontakt' }
-                    />
+                    >
+                        Kontakt
+                    </li>
                 </ul>
             </nav>
         </>

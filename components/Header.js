@@ -13,21 +13,21 @@ export default function Header() {
                     <div className={ styles.container }>
                         <Navbar/>
                         <div className={ styles.helper }>
-                            <h1 children={ 'Saim Mobile Physiotherapie' }
-                                className={ styles.h1 }
-                            />
-                            <h2 children={ 'Privat' }
-                                className={ styles.h2 }
-                            />
+                            <h1 className={ styles.h1 }>
+                                Saim Mobile Physiotherapie
+                            </h1>
+                            <h2 className={ styles.h2 }>
+                                Privat
+                            </h2>
                             <div className={ styles.subHeading }>
                                 <div>
-                                    <p children={ `${ new Date().getFullYear() - 1999 } Jahre Berufserfahrung` }/>
+                                    <p>{ new Date().getFullYear() - 1999 } Jahre Berufserfahrung</p>
                                 </div>
                                 <div>
-                                    <p
-                                        children={ `Staatlich anerkannte Manualtherapeutin, Physiotherapeutin,
-                                        Ödemtherapeutin und Personal Trainerin` }
-                                    />
+                                    <p>
+                                        Staatlich anerkannte Manualtherapeutin, Physiotherapeutin,
+                                        Ödemtherapeutin und Personal Trainerin
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -35,13 +35,15 @@ export default function Header() {
                             <a href={ 'tel:+4915785908915' }
                                rel={ 'noopener noreferrer' }
                                aria-label={ 'Telefonnummer' }
-                               children={ <FontAwesomeIcon icon={ faPhone } size={ '2x' }/> }
-                            />
+                            >
+                                <FontAwesomeIcon icon={ faPhone } size={ '2x' }/>
+                            </a>
                             <a href={ 'mailto:info@saim-mobilephysio.de' }
                                rel={ 'noopener noreferrer' }
                                aria-label={ 'E-Mail Adresse' }
-                               children={ <FontAwesomeIcon icon={ faEnvelope } size={ '2x' }/> }
-                            />
+                            >
+                                <FontAwesomeIcon icon={ faEnvelope } size={ '2x' }/>
+                            </a>
                         </div>
                     </div>
                 </div>

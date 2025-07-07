@@ -20,8 +20,9 @@ export default function Contact() {
                                 href="tel:+4915785908915"
                                 rel={ 'noopener noreferrer' }
                                 aria-label={ 'Telefonnummer' }
-                                children={ '+49 157 85 90 8915' }
-                            />
+                            >
+                                +49 157 85 90 8915
+                            </a>
                         </div>
                     </div>
                     <div className={ styles.rect }>
@@ -34,8 +35,9 @@ export default function Contact() {
                                 href="mailto:info@saim-mobilephysio.de"
                                 rel={ 'noopener noreferrer' }
                                 aria-label={ 'E-Mail Adresse' }
-                                children={ 'info@saim-mobilephysio.de' }
-                            />
+                            >
+                                info@saim-mobilephysio.de
+                            </a>
                         </div>
                     </div>
                     <div className={ styles.rect }>
@@ -51,8 +53,9 @@ export default function Contact() {
                                 target={ '_blank' }
                                 rel={ 'noopener noreferrer' }
                                 aria-label={ 'Adresse aif Google Map' }
-                                children={ '30 km um St. Augustin' }
-                            />
+                            >
+                                30 km um St. Augustin
+                            </a>
                         </div>
                     </div>
                 </div>
