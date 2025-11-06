@@ -56,7 +56,11 @@ export default function Header() {
                         priority
                         fetchPriority="high"
                         sizes="(max-width: 768px) 50vw, 33vw"
-                        style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                        style={{
+                            objectFit: 'cover',
+                            objectPosition: 'center top',
+                            background: 'transparent'
+                        }}
                     />
                 </div>
             </header>

@@ -95,6 +95,7 @@
     grid-column: 5/-1;
     transform: translateY(10vh);
     position: relative;
+    background: transparent;
     will-change: transform;
 }
 
