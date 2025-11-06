@@ -94,10 +94,7 @@
 .right {
     grid-column: 5/-1;
     transform: translateY(10vh);
-    background-image: url('../../public/f.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
+    position: relative;
     will-change: transform;
 }
 

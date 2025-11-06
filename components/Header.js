@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import Navbar from './Navbar';
+import Image from 'next/image';
 
 export default function Header() {
     return (
@@ -47,7 +48,17 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <div className={ styles.right }/>
+                <div className={ styles.right }>
+                    <Image
+                        src="/f.webp"
+                        alt="Saim Mobile Physiotherapie"
+                        fill
+                        priority
+                        fetchPriority="high"
+                        sizes="(max-width: 768px) 50vw, 33vw"
+                        style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                    />
+                </div>
             </header>
         </>
     );
