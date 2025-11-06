@@ -45,7 +45,7 @@ export default function Price() {
           alt={'Preisliste'}
           className={styles.list}
           priority
-          sizes='(max-width: 768px) 90vw, (max-width: 1200px) 70vw, 600px'
+          sizes='(max-width: 768px) 90vw, 500px'
         />
       </div>
     </section>
