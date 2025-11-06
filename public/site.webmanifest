@@ -1,0 +1,21 @@
+{
+  "name": "Saim Mobilephysio",
+  "short_name": "Mobilephysio",
+  "description": "Mobile Physiotherapie in Sankt Augustin - Manualtherapie, Ödemtherapie und Personal Training",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2cab29",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
