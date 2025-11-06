@@ -6,26 +6,31 @@ This directory contains the GitHub Actions workflow configuration for Claude Cod
 
 To complete the setup and enable Claude Code tagging in GitHub issues and PRs:
 
-### 1. Add ANTHROPIC_API_KEY Secret
+### 1. Add Authentication Secret
 
-You need to add your Anthropic API key as a GitHub secret:
+Choose one of the following authentication methods:
 
-1. Go to your repository on GitHub
-2. Navigate to **Settings** > **Secrets and variables** > **Actions**
-3. Click **New repository secret**
-4. Name: `ANTHROPIC_API_KEY`
-5. Value: Your Anthropic API key from https://console.anthropic.com/
+#### Option A: OAuth Token (Recommended for Pro/Max Users)
 
-**IMPORTANT**: Never commit API keys directly to the repository!
+1. Run `claude setup-token` in Claude Code terminal to generate your OAuth token
+2. Go to your repository on GitHub
+3. Navigate to **Settings** > **Secrets and variables** > **Actions**
+4. Click **New repository secret**
+5. Name: `CLAUDE_CODE_OAUTH_TOKEN`
+6. Value: The token generated from step 1
 
-### 2. Install Claude GitHub App (Optional but Recommended)
+#### Option B: API Key (All Users)
 
-For the best experience, install the Claude GitHub app:
+1. Get your API key from https://console.anthropic.com/
+2. Go to your repository on GitHub
+3. Navigate to **Settings** > **Secrets and variables** > **Actions**
+4. Click **New repository secret**
+5. Name: `ANTHROPIC_API_KEY`
+6. Value: Your Anthropic API key
 
-1. Run `claude setup-token` in Claude Code terminal (Pro/Max users)
-2. Or manually install from the Anthropic website
+**IMPORTANT**: Never commit API keys or tokens directly to the repository!
 
-### 3. Usage
+### 2. Usage
 
 Once set up, you can:
 
@@ -62,10 +67,11 @@ You can authenticate using:
 ## Troubleshooting
 
 If Claude doesn't respond:
-1. Verify `ANTHROPIC_API_KEY` is set in repository secrets
+1. Verify `CLAUDE_CODE_OAUTH_TOKEN` or `ANTHROPIC_API_KEY` is set in repository secrets
 2. Check that the workflow file is in `.github/workflows/`
 3. Ensure you're mentioning `@claude` in comments
 4. Check the Actions tab for workflow run logs
+5. For Max users: Run `claude setup-token` if your OAuth token has expired
 
 ## Documentation
 
