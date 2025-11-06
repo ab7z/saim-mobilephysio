@@ -1,6 +1,8 @@
 :root {
     --header-height: 80vh;
     --custom-green: #2cab29;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
 }
 
 body {

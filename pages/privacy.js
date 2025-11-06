@@ -1,8 +1,16 @@
+import Head from 'next/head';
 import styles from '../styles/Privacy.module.css';
 
 export default function Privacy() {
     return (
         <>
+            <Head>
+                <title>Datenschutzerklärung - Saim Mobilephysio</title>
+                <meta name='description' content='Datenschutzerklärung von Saim Mobilephysio Sankt Augustin. Informationen zum Umgang mit personenbezogenen Daten.' />
+                <meta property='og:title' content='Datenschutzerklärung - Saim Mobilephysio' />
+                <meta property='og:url' content='https://saim-mobilephysio.de/privacy' />
+                <meta name='robots' content='noindex, follow' />
+            </Head>
             <div className={ styles.main }>
                 <div className={ styles.container }>
                     <h1 className={styles.heading}>Datenschutzerklärung</h1>

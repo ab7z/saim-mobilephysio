@@ -1,8 +1,16 @@
+import Head from 'next/head';
 import styles from "../styles/Terms.module.css"
 
 export default function Terms() {
   return (
     <>
+      <Head>
+        <title>Impressum - Saim Mobilephysio</title>
+        <meta name='description' content='Impressum und rechtliche Informationen von Saim Mobilephysio Sankt Augustin, Faranak Nokhbehzaeem.' />
+        <meta property='og:title' content='Impressum - Saim Mobilephysio' />
+        <meta property='og:url' content='https://saim-mobilephysio.de/terms' />
+        <meta name='robots' content='noindex, follow' />
+      </Head>
       <div className={styles.main}>
         <div className={styles.container}>
           <h1>Impressum</h1>

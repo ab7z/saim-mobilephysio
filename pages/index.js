@@ -10,14 +10,22 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Saim Mobilephysio</title>
+        <title>Saim Mobilephysio - Mobile Physiotherapie in Sankt Augustin</title>
+        <meta
+          name='description'
+          content='Mobile Physiotherapie in Sankt Augustin. Professionelle Manualtherapie, Ödemtherapie und Personal Training. Hausbesuche in Sankt Augustin und Umgebung.'
+        />
         <meta
           property='og:title'
-          content='Saim Mobilephysio'
+          content='Saim Mobilephysio - Mobile Physiotherapie in Sankt Augustin'
         />
         <meta
           property='og:url'
           content='https://saim-mobilephysio.de'
+        />
+        <meta
+          name='twitter:title'
+          content='Saim Mobilephysio - Mobile Physiotherapie'
         />
       </Head>
 
