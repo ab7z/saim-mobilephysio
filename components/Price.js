@@ -40,8 +40,8 @@ export default function Price() {
 
         <Image
           src={'/preisliste.webp'}
-          width={600}
-          height={800}
+          width={640}
+          height={685}
           alt={'Preisliste'}
           className={styles.list}
           priority
