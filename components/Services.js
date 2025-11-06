@@ -14,6 +14,7 @@ export default function Services() {
                         src={ service }
                         alt={ 'massage mobile physio saim' }
                         placeholder={ 'blur' }
+                        sizes='(max-width: 740px) 100vw, 40vw'
                         style={{
                             width: '100%',
                             height: 'auto',
