@@ -10,6 +10,7 @@
     display: grid;
     justify-items: end;
     align-items: center;
+    aspect-ratio: 3 / 2;
 }
 
 .left > div:first-of-type {

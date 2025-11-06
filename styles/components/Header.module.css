@@ -93,11 +93,12 @@
 
 .right {
     grid-column: 5/-1;
-    margin-bottom: -10vh;
+    transform: translateY(10vh);
     background-image: url('../../public/f.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
+    will-change: transform;
 }
 
 @media (max-width: 1100px) {
@@ -117,7 +118,7 @@
         height: calc(100% - 30vh);
         align-self: end;
         justify-self: end;
-        margin-bottom: 0;
+        transform: none;
     }
 
     .subHeading {
@@ -154,7 +155,7 @@
         grid-row: 1/-1;
         height: 60vh;
         align-self: end;
-        margin-bottom: 0;
+        transform: none;
     }
 
     .helper {
@@ -211,7 +212,7 @@
     .right {
         height: 50vh;
         grid-column: 3/-1;
-        margin-left: -2rem;
+        transform: translateX(-2rem);
     }
 
     .svg {
@@ -249,6 +250,6 @@
 
     .right {
         height: 45vh;
-        margin-left: 0;
+        transform: none;
     }
 }
