@@ -40,7 +40,7 @@ export default function Form() {
                   id='mit'
                   required={true}
                 />
-                <label style={{ color: 'white' }}>mit Rezept</label>
+                <label htmlFor='mit' style={{ color: 'white' }}>mit Rezept</label>
               </div>
               <div style={{ display: 'flex' }}>
                 <input
@@ -49,61 +49,68 @@ export default function Form() {
                   id='ohne'
                   required={true}
                 />
-                <label style={{ color: 'white' }}>ohne Rezept</label>
+                <label htmlFor='ohne' style={{ color: 'white' }}>ohne Rezept</label>
               </div>
             </div>
             <div className={styles.user_box}>
               <input
                 type='text'
                 name='name'
+                id='name'
                 required={true}
               />
-              <label>Vorname/Name</label>
+              <label htmlFor='name'>Vorname/Name</label>
             </div>
             <div className={styles.user_box}>
               <input
                 type='text'
                 name='birthday'
+                id='birthday'
                 required={true}
               />
-              <label>Geb. Datum</label>
+              <label htmlFor='birthday'>Geb. Datum</label>
             </div>
             <div className={styles.user_box}>
               <input
                 type='tel'
                 name='phone'
+                id='phone'
                 required={true}
               />
-              <label>Telefon</label>
+              <label htmlFor='phone'>Telefon</label>
             </div>
             <div className={styles.user_box}>
               <input
                 type='email'
                 name='email'
+                id='email'
                 required={true}
               />
-              <label>email</label>
+              <label htmlFor='email'>email</label>
             </div>
             <div className={styles.user_box}>
               <input
                 type='text'
                 name='zip'
+                id='zip'
                 required={true}
               />
-              <label>PLZ/Ort</label>
+              <label htmlFor='zip'>PLZ/Ort</label>
             </div>
             <div className={styles.user_box}>
               <input
                 type='text'
                 name='address'
+                id='address'
                 required={true}
               />
-              <label>Straße/Hausnummer</label>
+              <label htmlFor='address'>Straße/Hausnummer</label>
             </div>
             <div>
-              <label style={{ color: 'white' }}>Ihre Nachricht</label>
+              <label htmlFor='message' style={{ color: 'white' }}>Ihre Nachricht</label>
               <textarea
                 name='message'
+                id='message'
                 required={false}
                 rows={10}
                 style={{ width: '100%', marginTop: '1rem' }}
