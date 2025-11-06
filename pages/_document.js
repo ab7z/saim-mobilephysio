@@ -71,7 +71,8 @@ export default function Document() {
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "addressLocality": "Sankt Augustin"
+                "latitude": "50.7753",
+                "longitude": "7.1889"
               },
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
@@ -85,7 +86,7 @@ export default function Document() {
               },
               "image": "https://saim-mobilephysio.de/android-chrome-512x512.png",
               "priceRange": "€€",
-              "provider": {
+              "employee": {
                 "@type": "Person",
                 "name": "Faranak Nokhbehzaeem",
                 "jobTitle": "Physiotherapeutin, Manualtherapeutin, Ödemtherapeutin, Personal Trainerin",
@@ -263,6 +264,67 @@ export default function Document() {
                     "name": "Saim Mobilephysio"
                   },
                   "serviceType": "Physiotherapie"
+                }
+              ]
+            })
+          }}
+        />
+
+        {/* Structured Data - FAQ for Rich Results */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Was kostet eine Physiotherapie-Behandlung bei Saim Mobilephysio?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Therapiedauer beträgt 60 Minuten. Mit ärztlichem Rezept kostet eine Behandlung 170€ (ohne Mehrwertsteuer). Für präventive Behandlungen ohne ärztliche Verordnung beträgt der Preis 190€ inklusive Mehrwertsteuer."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Welche Leistungen bietet Saim Mobilephysio an?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wir bieten folgende Leistungen an: Manuelle Therapie (MT), Physiotherapie, Manuelle Lymphdrainage (MLD), Atemtherapie, Migränetherapie, Akupressur, Beckenboden- & Rückentraining, Koordination-, Ausdauer- & Krafttraining, Wellnessbehandlungen (Gesicht & Dekolleté), Kinesiologische Tapetechniken, Massage, Ozontherapie (Hochfrequenztherapie), und Plasma-One-Therapie."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Übernimmt die Krankenkasse die Kosten?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Saim Mobilephysio ist eine Privatpraxis ohne Vertrag mit gesetzlichen Krankenkassen. Die Rechnung wird direkt an Sie als Patient gestellt. Private Krankenversicherungen (PKV) erstatten entsprechend die verordneten Kosten."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Wo bietet Saim Mobilephysio Hausbesuche an?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wir bieten mobile Physiotherapie mit Hausbesuchen in Sankt Augustin und Umgebung an."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Wer führt die Behandlungen durch?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Behandlungen werden von Faranak Nokhbehzaeem durchgeführt, einer staatlich anerkannten Physiotherapeutin, Manualtherapeutin, Ödemtherapeutin und Personal Trainerin."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Wie lange dauert eine Behandlung?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Therapiedauer beträgt 60 Minuten. Einige spezielle Behandlungen wie Ozontherapie und Plasma-One-Therapie dauern 30 Minuten, werden aber als volle Stunde abgerechnet."
+                  }
                 }
               ]
             })
