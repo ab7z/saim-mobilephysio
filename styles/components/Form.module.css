@@ -45,13 +45,13 @@
     font-size: 16px;
     color: #fff;
     pointer-events: none;
-    transition: .5s;
+    transition: transform .5s, color .5s, font-size .5s;
+    transform-origin: left top;
 }
 
 .login_box .user_box input:focus ~ label,
 .login_box .user_box input:valid ~ label {
-    top: -20px;
-    left: 0;
+    transform: translateY(-20px);
     color: #03e9f4;
     font-size: 12px;
 }

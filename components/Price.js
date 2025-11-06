@@ -39,7 +39,7 @@ export default function Price() {
         </div>
 
         <Image
-          src={'/preisliste.png'}
+          src={'/preisliste.webp'}
           width={600}
           height={800}
           alt={'Preisliste'}
