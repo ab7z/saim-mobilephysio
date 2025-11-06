@@ -55,7 +55,6 @@ export default function Header() {
                         fill
                         priority
                         fetchPriority="high"
-                        quality={70}
                         sizes="(max-width: 768px) 50vw, 33vw"
                         style={{
                             objectFit: 'cover',
