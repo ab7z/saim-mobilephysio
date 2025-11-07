@@ -1,6 +1,5 @@
-import React from 'react';
-import { renderToString } from 'react-dom/server';
-import App from './src/App';
+import { renderToString } from 'react-dom/server'
+import App from './src/App'
 
 const htmlTemplate = (content: string, route: string) => `
 <!DOCTYPE html>
@@ -14,29 +13,41 @@ const htmlTemplate = (content: string, route: string) => `
     <meta name="copyright" content="Saim Mobilephysio" />
     <meta name="theme-color" content="#2cab29" />
 
-    ${route === '/' ? `
+    ${
+      route === '/'
+        ? `
     <title>Saim Mobilephysio - Mobile Physiotherapie in Sankt Augustin</title>
     <meta name="description" content="Mobile Physiotherapie in Sankt Augustin. Professionelle Manualtherapie, Ödemtherapie und Personal Training. Hausbesuche in Sankt Augustin und Umgebung." />
     <meta property="og:title" content="Saim Mobilephysio - Mobile Physiotherapie in Sankt Augustin" />
     <meta property="og:url" content="https://saim-mobilephysio.de" />
     <meta name="twitter:title" content="Saim Mobilephysio - Mobile Physiotherapie" />
-    ` : ''}
+    `
+        : ''
+    }
 
-    ${route === '/privacy' ? `
+    ${
+      route === '/privacy'
+        ? `
     <title>Datenschutzerklärung - Saim Mobilephysio</title>
     <meta name="description" content="Datenschutzerklärung von Saim Mobilephysio Sankt Augustin. Informationen zum Umgang mit personenbezogenen Daten." />
     <meta property="og:title" content="Datenschutzerklärung - Saim Mobilephysio" />
     <meta property="og:url" content="https://saim-mobilephysio.de/privacy" />
     <meta name="robots" content="noindex, follow" />
-    ` : ''}
+    `
+        : ''
+    }
 
-    ${route === '/terms' ? `
+    ${
+      route === '/terms'
+        ? `
     <title>Impressum - Saim Mobilephysio</title>
     <meta name="description" content="Impressum und rechtliche Informationen von Saim Mobilephysio Sankt Augustin, Faranak Nokhbehzaeem." />
     <meta property="og:title" content="Impressum - Saim Mobilephysio" />
     <meta property="og:url" content="https://saim-mobilephysio.de/terms" />
     <meta name="robots" content="noindex, follow" />
-    ` : ''}
+    `
+        : ''
+    }
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Saim Mobilephysio" />
@@ -82,13 +93,13 @@ const htmlTemplate = (content: string, route: string) => `
     <script type="module" src="/dist/client.js"></script>
   </body>
 </html>
-`;
+`
 
 const server = Bun.serve({
   port: process.env.PORT || 3000,
   async fetch(req) {
-    const url = new URL(req.url);
-    const pathname = url.pathname;
+    const url = new URL(req.url)
+    const pathname = url.pathname
 
     // Serve static files from dist/
     if (pathname.startsWith('/dist/')) {
@@ -111,26 +122,26 @@ const server = Bun.serve({
     if (pathname.match(/\.(ico|png|jpg|jpeg|svg|webp|avif|js|json|webmanifest|txt|xml|html)$/)) {
       const file = Bun.file(`./public${pathname}`);
       if (await file.exists()) {
-        return new Response(file);
+        return new Response(file)
       }
     }
 
     // Handle routes
-    let route = pathname;
+    let route = pathname
     if (pathname !== '/' && pathname !== '/privacy' && pathname !== '/terms') {
-      route = '/'; // Default to home for unknown routes
+      route = '/' // Default to home for unknown routes
     }
 
     try {
-      const html = renderToString(<App route={route} />);
+      const html = renderToString(<App route={route} />)
       return new Response(htmlTemplate(html, route), {
         headers: { 'Content-Type': 'text/html' },
-      });
+      })
     } catch (error) {
-      console.error('SSR Error:', error);
-      return new Response('Internal Server Error', { status: 500 });
+      console.error('SSR Error:', error)
+      return new Response('Internal Server Error', { status: 500 })
     }
   },
-});
+})
 
-console.log(`🚀 Server running at http://localhost:${server.port}`);
+console.log(`🚀 Server running at http://localhost:${server.port}`)
