@@ -1,3 +1,4 @@
+import React from 'react';
 import SimpleNavbar from '../components/SimpleNavbar';
 import Contact from '../components/Contact';
 import Layout from '../components/Layout';

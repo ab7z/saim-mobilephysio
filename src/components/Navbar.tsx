@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Navbar() {
     const scroll = (id: string) => {
         const element = document.querySelector('#' + id);

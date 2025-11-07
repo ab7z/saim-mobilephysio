@@ -1,3 +1,4 @@
+import React from 'react';
 import Contact from '../components/Contact';
 import Form from '../components/Form';
 import Header from '../components/Header';

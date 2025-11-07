@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Intro() {
     const currentYear = new Date().getFullYear();
     const experienceYears = currentYear - 2011;

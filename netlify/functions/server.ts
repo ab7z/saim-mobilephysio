@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Context } from "@netlify/functions";
 import { renderToString } from 'react-dom/server';
 import App from '../../src/App';

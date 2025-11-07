@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function SimpleNavbar() {
     return (
         <nav className="nav">
