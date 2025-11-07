@@ -1,5 +1,5 @@
 import React from 'react'
-import { renderToString } from 'react-dom/server'
+import { renderToReadableStream } from 'react-dom/server'
 import App from './src/App'
 
 const htmlTemplate = (content: string, route: string) => `
@@ -134,7 +134,19 @@ const server = Bun.serve({
     }
 
     try {
-      const html = renderToString(<App route={route} />)
+      const stream = await renderToReadableStream(<App route={route} />)
+
+      // Read the stream to string for now (we can optimize this later)
+      const reader = stream.getReader()
+      const decoder = new TextDecoder()
+      let html = ''
+
+      while (true) {
+        const { done, value } = await reader.read()
+        if (done) break
+        html += decoder.decode(value, { stream: true })
+      }
+
       return new Response(htmlTemplate(html, route), {
         headers: { 'Content-Type': 'text/html' },
       })
