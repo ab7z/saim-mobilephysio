@@ -42,7 +42,7 @@ export default function Price() {
           src={'/preisliste.webp'}
           width={1906}
           height={2040}
-          alt={'Preisliste'}
+          alt={'Detaillierte Preisliste für Physiotherapie-Leistungen mit ärztlichem Rezept (170€) und ohne Rezept (190€) pro 60-minütiger Behandlung'}
           className={styles.list}
           priority
           sizes='(max-width: 768px) 90vw, 500px'

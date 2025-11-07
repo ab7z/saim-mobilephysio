@@ -10,7 +10,7 @@ export default function Header() {
         <>
             <header className={ styles.wrapper } id={ 'home' }>
                 <div className={ styles.left }>
-                    <div className={ styles.svg }/>
+                    <div className={ styles.svg } aria-hidden="true"/>
                     <div className={ styles.container }>
                         <Navbar/>
                         <div className={ styles.helper }>
@@ -35,15 +35,15 @@ export default function Header() {
                         <div className={ styles.icons }>
                             <a href={ 'tel:+4915785908915' }
                                rel={ 'noopener noreferrer' }
-                               aria-label={ 'Telefonnummer' }
+                               aria-label={ 'Anrufen unter 0157 85908915' }
                             >
-                                <FontAwesomeIcon icon={ faPhone } size={ '2x' }/>
+                                <FontAwesomeIcon icon={ faPhone } size={ '2x' } aria-hidden="true"/>
                             </a>
                             <a href={ 'mailto:info@saim-mobilephysio.de' }
                                rel={ 'noopener noreferrer' }
-                               aria-label={ 'E-Mail Adresse' }
+                               aria-label={ 'E-Mail senden an info@saim-mobilephysio.de' }
                             >
-                                <FontAwesomeIcon icon={ faEnvelope } size={ '2x' }/>
+                                <FontAwesomeIcon icon={ faEnvelope } size={ '2x' } aria-hidden="true"/>
                             </a>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ export default function Header() {
                 <div className={ styles.right }>
                     <Image
                         src="/f.webp"
-                        alt="Saim Mobile Physiotherapie"
+                        alt="Faranak Nokhbehzaeem, Physiotherapeutin bei Saim Mobile Physiotherapie"
                         fill
                         priority
                         fetchPriority="high"

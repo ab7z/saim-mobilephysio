@@ -72,7 +72,7 @@
     background-color: transparent;
 }
 
-.login_box button:hover {
+.login_box button:hover:not(:disabled) {
     cursor: pointer;
     background: #03e9f4;
     color: #fff;
@@ -83,6 +83,59 @@
     0 0 100px #03e9f4;
 }
 
+.login_box button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.login_box button:focus-visible {
+    outline: 2px solid #03e9f4;
+    outline-offset: 4px;
+}
+
+/* Fieldset for radio buttons */
+.radioFieldset {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.radioLegend {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+/* Hint text for form fields */
+.hint {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+/* Status messages */
+.successMessage {
+    background-color: #2cab29;
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #25a024;
+}
+
+.errorMessage {
+    background-color: #dc3545;
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #c82333;
+}
+
 @media (max-width: 768px) {
     .container {
         width: 90%;
@@ -91,10 +144,16 @@
 
     .login_box {
         flex: 1 0 100%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .radioFieldset {
+        padding: 0.75rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     .container {
         width: 95%;
         margin: 0 auto;

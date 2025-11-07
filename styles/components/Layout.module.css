@@ -1,3 +1,24 @@
+/* Skip navigation link - visible only when focused */
+.skipLink {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--custom-green);
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 100;
+    border-radius: 0 0 4px 0;
+    transition: top 0.3s;
+}
+
+.skipLink:focus {
+    top: 0;
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
 .main {
     width: 100%;
     height: 100%;

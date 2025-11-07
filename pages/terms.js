@@ -40,17 +40,17 @@ export default function Terms() {
             <a
               href='tel:+4915785908915'
               rel={"noopener noreferrer"}
-              aria-label={"Telefonnummer"}
+              aria-label={"Anrufen unter 0157 85908915"}
             >
               0157 / 85908915
             </a>
           </p>
           <p>
-            E-Mail:
+            E-Mail:{" "}
             <a
               href='mailto:info@saim-mobilephysio.de'
               rel={"noopener noreferrer"}
-              aria-label={"E-Mail Adresse"}
+              aria-label={"E-Mail senden an info@saim-mobilephysio.de"}
             >
               info@saim-mobilephysio.de
             </a>
@@ -92,7 +92,7 @@ export default function Terms() {
               href='https://www.gesetze-im-internet.de/mphg/BJNR108400994.html'
               rel='noopener noreferrer'
               target='_blank'
-              aria-label={"Gestze"}
+              aria-label={"Gesetz über die Berufe in der Physiotherapie auf gesetze-im-internet.de öffnen"}
             >
               https://www.gesetze-im-internet.de/mphg/BJNR108400994.html
             </a>

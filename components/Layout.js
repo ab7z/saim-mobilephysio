@@ -4,7 +4,10 @@ import styles from '../styles/components/Layout.module.css';
 export default function Layout({ children }) {
     return (
         <>
-            <main className={ styles.main }>
+            <a href="#main-content" className={ styles.skipLink }>
+                Zum Hauptinhalt springen
+            </a>
+            <main id="main-content" className={ styles.main }>
                 { children }
             </main>
             <Footer/>

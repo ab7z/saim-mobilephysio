@@ -14,46 +14,61 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={ styles.nav }>
+            <nav className={ styles.nav } aria-label="Hauptnavigation">
                 <ul className={ styles.ul }>
                     <li className={ styles.li }>
                         <Image
                             src={ '/logo.svg' }
-                            alt={ 'logo' }
+                            alt={ 'Saim Mobilephysio Logo' }
                             width={ 50 }
                             height={ 50 }
                             quality={ 80 }
                         />
                     </li>
-                    <li className={ styles.li }
-                        onClick={ () => scroll('home') }
-                        aria-label={'Home'}
-                    >
-                        Home
+                    <li>
+                        <button
+                            className={ styles.li }
+                            onClick={ () => scroll('home') }
+                            type="button"
+                        >
+                            Home
+                        </button>
                     </li>
-                    <li className={ styles.li }
-                        onClick={ () => scroll('intro') }
-                        aria-label={'Über mich'}
-                    >
-                        Über mich
+                    <li>
+                        <button
+                            className={ styles.li }
+                            onClick={ () => scroll('intro') }
+                            type="button"
+                        >
+                            Über mich
+                        </button>
                     </li>
-                    <li className={ styles.li }
-                        onClick={ () => scroll('services') }
-                        aria-label={'Leistungen'}
-                    >
-                        Leistungen
+                    <li>
+                        <button
+                            className={ styles.li }
+                            onClick={ () => scroll('services') }
+                            type="button"
+                        >
+                            Leistungen
+                        </button>
                     </li>
-                    <li className={ styles.li }
-                        onClick={ () => scroll('prices') }
-                        aria-label={'Preise'}
-                    >
-                        Preise
+                    <li>
+                        <button
+                            className={ styles.li }
+                            onClick={ () => scroll('prices') }
+                            type="button"
+                        >
+                            Preise
+                        </button>
                     </li>
-                    <li className={ styles.li }
-                        onClick={ () => scroll('contact') }
-                        aria-label={'Kontakt'}
-                    >
-                        Kontakt
+                    <li>
+                        <button
+                            className={ styles.li }
+                            onClick={ () => scroll('contact') }
+                            type="button"
+                        >
+                            Kontakt
+                        </button>
                     </li>
                 </ul>
             </nav>
