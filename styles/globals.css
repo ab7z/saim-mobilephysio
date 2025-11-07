@@ -40,3 +40,47 @@ ul {
     margin-block-end: 0;
     padding-inline-start: 0;
 }
+
+/* Global accessibility: Focus indicators for keyboard navigation */
+*:focus-visible {
+    outline: 2px solid var(--custom-green);
+    outline-offset: 2px;
+}
+
+/* Ensure links have visible focus */
+a:focus-visible {
+    outline: 2px solid var(--custom-green);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Ensure buttons have visible focus */
+button:focus-visible {
+    outline: 2px solid var(--custom-green);
+    outline-offset: 2px;
+}
+
+/* Ensure form inputs have visible focus */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--custom-green);
+    outline-offset: 2px;
+}
+
+/* Smooth scrolling for better UX */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

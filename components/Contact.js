@@ -11,7 +11,7 @@ export default function Contact() {
                 <h2 className={ styles.heading }>Kontakt</h2>
                 <div className={ styles.container }>
                     <div className={ styles.rect }>
-                        <div>
+                        <div aria-hidden="true">
                             <FontAwesomeIcon icon={ faPhone } size={ '2x' }/>
                         </div>
                         <div>
@@ -19,14 +19,14 @@ export default function Contact() {
                                 className={ styles.link }
                                 href="tel:+4915785908915"
                                 rel={ 'noopener noreferrer' }
-                                aria-label={ 'Telefonnummer' }
+                                aria-label={ 'Anrufen unter +49 157 85 90 8915' }
                             >
                                 +49 157 85 90 8915
                             </a>
                         </div>
                     </div>
                     <div className={ styles.rect }>
-                        <div>
+                        <div aria-hidden="true">
                             <FontAwesomeIcon icon={ faEnvelope } size={ '2x' }/>
                         </div>
                         <div>
@@ -34,14 +34,14 @@ export default function Contact() {
                                 className={ styles.link }
                                 href="mailto:info@saim-mobilephysio.de"
                                 rel={ 'noopener noreferrer' }
-                                aria-label={ 'E-Mail Adresse' }
+                                aria-label={ 'E-Mail senden an info@saim-mobilephysio.de' }
                             >
                                 info@saim-mobilephysio.de
                             </a>
                         </div>
                     </div>
                     <div className={ styles.rect }>
-                        <div>
+                        <div aria-hidden="true">
                             <FontAwesomeIcon icon={ faLocationArrow } size={ '2x' }/>
                         </div>
                         <div>
@@ -52,7 +52,7 @@ export default function Contact() {
                                 '.1882297' }
                                 target={ '_blank' }
                                 rel={ 'noopener noreferrer' }
-                                aria-label={ 'Adresse aif Google Map' }
+                                aria-label={ 'Standort auf Google Maps ansehen - 30 km um St. Augustin' }
                             >
                                 30 km um St. Augustin
                             </a>

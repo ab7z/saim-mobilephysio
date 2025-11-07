@@ -12,7 +12,7 @@ export default function Services() {
                 <div className={ styles.left }>
                     <Image
                         src={ service }
-                        alt={ 'massage mobile physio saim' }
+                        alt={ 'Professionelle Massage-Behandlung bei Saim Mobile Physiotherapie' }
                         placeholder={ 'blur' }
                         sizes='(max-width: 740px) 100vw, 40vw'
                         style={{
@@ -26,7 +26,7 @@ export default function Services() {
                     <div className={ styles.wrapper }>
                         <h2 className={ styles.heading }>Leistungen</h2>
                         <div className={ styles.description }>
-                            <ul className={ styles.information }>
+                            <ul className={ styles.information } aria-label="Physiotherapie Leistungen">
                                 <li>Manuelle Therapie (MT)</li>
                                 <li>Physio­the­rapie</li>
                                 <li>Manuelle Lymph­drainage (MLD)</li>
@@ -35,7 +35,7 @@ export default function Services() {
                                 <li>Aku­pres­sur</li>
                                 <li>Becken­boden- & Rücken­training</li>
                             </ul>
-                            <ul className={ styles.information }>
+                            <ul className={ styles.information } aria-label="Weitere Leistungen">
                                 <li>Ko­or­dina­tion-, Ausdauer- & Kraft­training</li>
                                 <li>Well­ness­be­hand­lungen (Gesicht & Dekolleté)</li>
                                 <li>Kine­sio­log­ische Tape­tech­niken</li>
@@ -47,12 +47,12 @@ export default function Services() {
                         <div className={ styles.contact }>
                             <p>Nimm Kontakt auf</p>
                             <a href={ 'tel:+4915785908915' } rel={ 'noopener noreferrer' }
-                               aria-label={ 'Telefonnummer' }>
-                                <FontAwesomeIcon icon={ faPhone } size={ '2x' }/>
+                               aria-label={ 'Anrufen unter 0157 85908915' }>
+                                <FontAwesomeIcon icon={ faPhone } size={ '2x' } aria-hidden="true"/>
                             </a>
                             <a href={ 'mailto:info@saim-mobilephysio.de' } rel={ 'noopener noreferrer' }
-                               aria-label={ 'E-Mail Adresse' }>
-                                <FontAwesomeIcon icon={ faEnvelope } size={ '2x' }/>
+                               aria-label={ 'E-Mail senden an info@saim-mobilephysio.de' }>
+                                <FontAwesomeIcon icon={ faEnvelope } size={ '2x' } aria-hidden="true"/>
                             </a>
                         </div>
                         <p className={ styles.additionalInfo }><sup>*</sup> 30 minütige Behandlung wird als volle Stunde

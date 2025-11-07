@@ -90,10 +90,10 @@ export default function Privacy() {
                         53757 St. Augustin</p>
 
                     <p>Telefon: <a href="tel:+4915785908915" rel={ 'noopener noreferrer' }
-                                   aria-label={ 'Telefinnummer' }>0157
+                                   aria-label={ 'Anrufen unter 0157 85908915' }>0157
                         / 85908915</a><br/>
-                        E-Mail:<a href="mailto:info@saim-mobilephysio.de" rel={ 'noopener noreferrer' }
-                                  aria-label={ 'E-Mail Adresse' }>info@saim-mobilephysio.de</a></p>
+                        E-Mail: <a href="mailto:info@saim-mobilephysio.de" rel={ 'noopener noreferrer' }
+                                  aria-label={ 'E-Mail senden an info@saim-mobilephysio.de' }>info@saim-mobilephysio.de</a></p>
 
                     <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam
                         mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B.
