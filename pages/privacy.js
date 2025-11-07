@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import SimpleNavbar from '../components/SimpleNavbar';
 import styles from '../styles/Privacy.module.css';
 
 export default function Privacy() {
@@ -11,6 +12,7 @@ export default function Privacy() {
                 <meta property='og:url' content='https://saim-mobilephysio.de/privacy' />
                 <meta name='robots' content='noindex, follow' />
             </Head>
+            <SimpleNavbar />
             <div className={ styles.main }>
                 <div className={ styles.container }>
                     <h1 className={styles.heading}>Datenschutzerklärung</h1>
