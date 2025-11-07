@@ -99,7 +99,7 @@ export default function Terms() {
           </p>
 
           <p>
-            <strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</strong>
+            <strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</strong>
           </p>
 
           <p>
@@ -110,8 +110,39 @@ export default function Terms() {
           </p>
 
           <p>
+            <strong>Berufshaftpflichtversicherung</strong>
+          </p>
+
+          <p>
+            Name und Anschrift des Versicherers:
+            <br />
+            [Bitte Namen und Anschrift der Berufshaftpflichtversicherung einfügen]
+            <br />
+            Geltungsbereich: Deutschland
+          </p>
+
+          <p>
+            <strong>Streitschlichtung</strong>
+          </p>
+
+          <p>
             Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
             Verbraucherschlichtungsstelle teilzunehmen.
+          </p>
+
+          <p>
+            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+            <br />
+            <a
+              href='https://ec.europa.eu/consumers/odr/'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label={"EU Online-Streitbeilegung"}
+            >
+              https://ec.europa.eu/consumers/odr/
+            </a>
+            <br />
+            Unsere E-Mail-Adresse finden Sie oben im Impressum.
           </p>
 
           <p>
@@ -119,8 +150,7 @@ export default function Terms() {
           </p>
 
           <p>
-            <br />
-            sowie eigene Bilder
+            Die auf dieser Website verwendeten Bilder sind eigene Aufnahmen oder lizenzfrei.
           </p>
 
           <p>
