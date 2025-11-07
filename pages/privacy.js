@@ -45,7 +45,8 @@ export default function Privacy() {
                     <p><strong>Wofür nutzen wir Ihre Daten?</strong></p>
 
                     <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu
-                        gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
+                        gewährleisten. Die über das Kontaktformular übermittelten Daten werden ausschließlich zur
+                        Bearbeitung Ihrer Anfrage und zur Kontaktaufnahme verwendet.</p>
 
                     <p><strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong></p>
 
@@ -184,29 +185,15 @@ export default function Privacy() {
 
                     <p><strong>Cookies</strong></p>
 
-                    <p>Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner
-                        keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot
-                        nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die
-                        auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.</p>
+                    <p>Diese Website verwendet keine Cookies. Es werden keine Daten in Ihrem Browser gespeichert, die
+                        über den reinen Besuch der Website hinausgehen. Sie müssen daher keine Cookie-Einstellungen
+                        vornehmen.</p>
 
-                    <p>Die meisten der von uns verwendeten Cookies sind so genannte “Session-Cookies”. Sie werden
-                        nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät
-                        gespeichert bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim
-                        nächsten Besuch wiederzuerkennen.</p>
+                    <p><strong>Tracking und Analyse-Tools</strong></p>
 
-                    <p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert
-                        werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle
-                        oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des
-                        Browser aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website
-                        eingeschränkt sein.</p>
-
-                    <p>Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur
-                        Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (z.B. Warenkorbfunktion)
-                        erforderlich sind, werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert. Der
-                        Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von Cookies zur technisch
-                        fehlerfreien und optimierten Bereitstellung seiner Dienste. Soweit andere Cookies (z.B.
-                        Cookies zur Analyse Ihres Surfverhaltens) gespeichert werden, werden diese in dieser
-                        Datenschutzerklärung gesondert behandelt.</p>
+                    <p>Diese Website verwendet keine Tracking- oder Analyse-Tools wie Google Analytics, Matomo oder
+                        ähnliche Dienste. Ihr Surfverhalten auf unserer Website wird nicht erfasst oder analysiert.
+                        Wir verzichten bewusst auf solche Technologien, um Ihre Privatsphäre zu schützen.</p>
 
                     <p><strong>Server-Log-Dateien</strong></p>
 
@@ -228,12 +215,25 @@ export default function Privacy() {
                         Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung
                         und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.</p>
 
-                    <p><strong>Anfrage per E-Mail oder Telefon</strong></p>
+                    <p><strong>Kontaktformular</strong></p>
 
-                    <p>Wenn Sie uns per E-Mail oder Telefon kontaktieren, wird Ihre Anfrage inklusive aller
-                        daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung
-                        Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre
-                        Einwilligung weiter.</p>
+                    <p>Wenn Sie uns über das Kontaktformular auf unserer Website kontaktieren, werden die von Ihnen
+                        eingegebenen Daten zum Zwecke der Bearbeitung Ihrer Anfrage bei uns gespeichert und verarbeitet.
+                        Folgende Daten werden über das Kontaktformular erhoben:</p>
+
+                    <ul>
+                        <li>Name (Vorname/Name)</li>
+                        <li>Geburtsdatum</li>
+                        <li>Telefonnummer</li>
+                        <li>E-Mail-Adresse</li>
+                        <li>Postleitzahl/Ort</li>
+                        <li>Straße/Hausnummer</li>
+                        <li>Ihre Nachricht</li>
+                        <li>Information, ob Sie ein ärztliches Rezept haben</li>
+                    </ul>
+
+                    <p>Die Formulardaten werden über Netlify Forms verarbeitet und an uns übermittelt. Netlify ist
+                        unser Hosting-Provider. Diese Daten geben wir nicht ohne Ihre Einwilligung an Dritte weiter.</p>
 
                     <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern
                         Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung
@@ -242,23 +242,52 @@ export default function Privacy() {
                         Interessen (Art. 6 Abs. 1 lit. f DSGVO), da wir ein berechtigtes Interesse an der effektiven
                         Bearbeitung der an uns gerichteten Anfragen haben.</p>
 
-                    <p>Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns
+                    <p>Die von Ihnen an uns per Kontaktformular übersandten Daten verbleiben bei uns, bis Sie uns
                         zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die
                         Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens).
                         Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben
                         unberührt.</p>
 
-                    <h3>4. Plugins und Tools</h3>
+                    <p><strong>Anfrage per E-Mail oder Telefon</strong></p>
 
-                    <p><strong>Google Web Fonts</strong></p>
+                    <p>Wenn Sie uns per E-Mail oder Telefon kontaktieren, wird Ihre Anfrage inklusive aller
+                        daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung
+                        Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre
+                        Einwilligung weiter.</p>
 
-                    <p>Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts, die
-                        von Google bereitgestellt werden. Die Google Fonts sind lokal installiert. Eine Verbindung
-                        zu Servern von Google findet dabei nicht statt.</p>
+                    <h3 className={styles.h3}>4. Hosting und Content Delivery</h3>
 
-                    <p><strong>Google Analytics</strong></p>
-                    <p><strong>Logrocket</strong></p>
-                    <p><strong>Sentry</strong></p>
+                    <p><strong>Netlify</strong></p>
+
+                    <p>Diese Website wird auf Servern von Netlify, Inc., 44 Montgomery Street, Suite 300, San
+                        Francisco, CA 94104, USA gehostet. Netlify erfasst automatisch Daten über jeden Zugriff auf
+                        die Website (Server-Log-Dateien). Zu diesen Zugriffsdaten gehören unter anderem IP-Adresse,
+                        Browsertyp, Betriebssystem und die zuvor besuchte Seite (Referrer URL).</p>
+
+                    <p>Die Verwendung von Netlify erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben
+                        ein berechtigtes Interesse an einer zuverlässigen und sicheren Darstellung unserer Website.
+                        Weitere Informationen finden Sie in der Datenschutzerklärung von Netlify unter:
+                        https://www.netlify.com/privacy/</p>
+
+                    <h3 className={styles.h3}>5. Externe Dienste</h3>
+
+                    <p><strong>Google Fonts (Next.js Optimierung)</strong></p>
+
+                    <p>Diese Website nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts
+                        (Open Sans und Roboto), die von Google bereitgestellt werden. Diese werden durch die
+                        Next.js-Font-Optimierung geladen, wodurch beim ersten Laden der Seite eine Verbindung zu
+                        Google-Servern hergestellt werden kann. Ihr Browser lädt die benötigten Web Fonts in Ihren
+                        Browsercache, um Texte und Schriftarten korrekt anzuzeigen.</p>
+
+                    <p>Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google
+                        aufnehmen. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse unsere
+                        Website aufgerufen wurde. Die Nutzung von Google Web Fonts erfolgt im Interesse einer
+                        einheitlichen und ansprechenden Darstellung unserer Online-Angebote. Dies stellt ein
+                        berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.</p>
+
+                    <p>Weitere Informationen zu Google Web Fonts finden Sie unter
+                        https://developers.google.com/fonts/faq und in der Datenschutzerklärung von Google:
+                        https://policies.google.com/privacy</p>
                 </div>
             </div>
         </>
