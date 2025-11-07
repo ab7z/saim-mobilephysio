@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import SimpleNavbar from '../components/SimpleNavbar';
 import styles from "../styles/Terms.module.css"
 
 export default function Terms() {
@@ -11,6 +12,7 @@ export default function Terms() {
         <meta property='og:url' content='https://saim-mobilephysio.de/terms' />
         <meta name='robots' content='noindex, follow' />
       </Head>
+      <SimpleNavbar />
       <div className={styles.main}>
         <div className={styles.container}>
           <h1>Impressum</h1>
