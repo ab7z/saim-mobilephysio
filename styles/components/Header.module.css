@@ -45,7 +45,7 @@
 }
 
 .h1 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 .h2 {
@@ -67,6 +67,7 @@
 
 .subHeading p {
     color: white;
+    font-size: 1.1rem;
     line-height: 2rem;
     text-align: center;
 }
@@ -185,7 +186,7 @@
     }
 
     .h1 {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .h1,
@@ -220,7 +221,7 @@
 
 @media (max-width: 375px) {
     .h1 {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .h2 {
@@ -228,7 +229,7 @@
     }
 
     .subHeading {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 }
 
@@ -242,7 +243,7 @@
     }
 
     .h1 {
-        font-size: .72rem;
+        font-size: .9rem;
         margin-bottom: .5rem;
     }
 
