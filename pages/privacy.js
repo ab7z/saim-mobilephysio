@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import SimpleNavbar from '../components/SimpleNavbar';
+import Contact from '../components/Contact';
 import styles from '../styles/Privacy.module.css';
 
 export default function Privacy() {
@@ -292,6 +293,7 @@ export default function Privacy() {
                         https://policies.google.com/privacy</p>
                 </div>
             </div>
+            <Contact />
         </>
     );
 };

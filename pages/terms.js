@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import SimpleNavbar from '../components/SimpleNavbar';
+import Contact from '../components/Contact';
 import styles from "../styles/Terms.module.css"
 
 export default function Terms() {
@@ -182,6 +183,7 @@ export default function Terms() {
           </p>
         </div>
       </div>
+      <Contact />
     </>
   )
 }
