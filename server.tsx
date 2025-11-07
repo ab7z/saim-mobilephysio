@@ -90,13 +90,26 @@ const server = Bun.serve({
     const url = new URL(req.url);
     const pathname = url.pathname;
 
-    // Serve static files
-    if (pathname.startsWith('/dist/') ||
-        pathname.startsWith('/styles/') ||
-        pathname.startsWith('/public/') ||
-        pathname.match(/\.(ico|png|jpg|jpeg|svg|webp|avif|css|js|json|webmanifest)$/)) {
-      const filePath = pathname.startsWith('/') ? `.${pathname}` : pathname;
-      const file = Bun.file(filePath);
+    // Serve static files from dist/
+    if (pathname.startsWith('/dist/')) {
+      const file = Bun.file(`.${pathname}`);
+      if (await file.exists()) {
+        return new Response(file);
+      }
+    }
+
+    // Serve static files from styles/
+    if (pathname.startsWith('/styles/')) {
+      const file = Bun.file(`.${pathname}`);
+      if (await file.exists()) {
+        return new Response(file);
+      }
+    }
+
+    // Serve static files from public/ (without /public/ prefix in URL)
+    // e.g., /logo.svg -> ./public/logo.svg
+    if (pathname.match(/\.(ico|png|jpg|jpeg|svg|webp|avif|js|json|webmanifest|txt|xml|html)$/)) {
+      const file = Bun.file(`./public${pathname}`);
       if (await file.exists()) {
         return new Response(file);
       }

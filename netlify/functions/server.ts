@@ -2,8 +2,6 @@ import React from 'react';
 import type { Context } from "@netlify/functions";
 import { renderToString } from 'react-dom/server';
 import App from '../../src/App';
-import { readFileSync } from 'fs';
-import { join } from 'path';
 
 const getHtmlTemplate = (content: string, route: string) => {
   // Read the static HTML template parts

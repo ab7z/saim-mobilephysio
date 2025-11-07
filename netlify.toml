@@ -1,18 +1,9 @@
 [build]
-  command = "curl -fsSL https://bun.sh/install | bash && export BUN_INSTALL=\"$HOME/.bun\" && export PATH=\"$BUN_INSTALL/bin:$PATH\" && bun install && bun run build"
+  command = "curl -fsSL https://bun.sh/install | bash && export BUN_INSTALL=\"$HOME/.bun\" && export PATH=\"$BUN_INSTALL/bin:$PATH\" && bun install && bun run build && cp -r dist public/dist && cp -r styles public/styles"
   publish = "public"
 
 [[redirects]]
-  from = "/dist/*"
-  to = "/dist/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/styles/*"
-  to = "/styles/:splat"
-  status = 200
-
-[[redirects]]
   from = "/*"
-  to = "/.netlify/builders/server"
+  to = "/.netlify/functions/server"
   status = 200
+  force = false
