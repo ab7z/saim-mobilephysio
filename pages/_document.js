@@ -11,7 +11,7 @@ export default function Document() {
         <meta name='robots' content='index, follow' />
         <meta name='author' content='Saim Mobilephysio' />
         <meta name='copyright' content='Saim Mobilephysio' />
-        <meta name="theme-color" content="#2cab29" />
+        <meta name="theme-color" content="#38a815" />
         <meta
           name='description'
           content='Saim Mobilephysio Sankt Augustin. Faranak Nokhbehzaeem ist staatlich anerkannte Manualtherapeutin, Physiotherapeutin, Ödemtherapeutin und Personal Trainerin und bietet Hausbesuche in Sankt Augustin und Umgebung.'
@@ -81,7 +81,7 @@ export default function Document() {
                 ]
               },
               "image": "https://saim-mobilephysio.de/android-chrome-512x512.png",
-              "priceRange": "€€",
+              "priceRange": "15 € – 150 €",
               "employee": {
                 "@type": "Person",
                 "name": "Faranak Nokhbehzaeem",
@@ -91,45 +91,42 @@ export default function Document() {
               "makesOffer": [
                 {
                   "@type": "Offer",
-                  "name": "Physiotherapie mit ärztlichem Rezept",
-                  "description": "Behandlung aufgrund einer Krankheit mit ärztlichem Rezept. Therapiedauer: 60 Minuten.",
-                  "price": "170",
+                  "name": "Krankengymnastik",
+                  "price": "39.80",
                   "priceCurrency": "EUR",
-                  "priceSpecification": {
-                    "@type": "PriceSpecification",
-                    "price": "170",
-                    "priceCurrency": "EUR",
-                    "valueAddedTaxIncluded": false
-                  },
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Mobile Physiotherapie (60 Minuten)",
-                    "provider": {
-                      "@type": "Person",
-                      "name": "Faranak Nokhbehzaeem"
-                    }
-                  }
+                  "itemOffered": { "@type": "Service", "name": "Krankengymnastik" }
                 },
                 {
                   "@type": "Offer",
-                  "name": "Präventive Physiotherapie ohne Rezept",
-                  "description": "Präventive Behandlung ohne ärztliche Verordnung. Therapiedauer: 60 Minuten.",
-                  "price": "190",
+                  "name": "Manuelle Therapie",
+                  "description": "15 Minuten Behandlungszeit",
+                  "price": "43.00",
                   "priceCurrency": "EUR",
-                  "priceSpecification": {
-                    "@type": "PriceSpecification",
-                    "price": "190",
-                    "priceCurrency": "EUR",
-                    "valueAddedTaxIncluded": true
-                  },
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Mobile Physiotherapie präventiv (60 Minuten)",
-                    "provider": {
-                      "@type": "Person",
-                      "name": "Faranak Nokhbehzaeem"
-                    }
-                  }
+                  "itemOffered": { "@type": "Service", "name": "Manuelle Therapie" }
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Manuelle Lymphdrainage (eine Region)",
+                  "description": "30 Minuten Behandlungszeit",
+                  "price": "81.91",
+                  "priceCurrency": "EUR",
+                  "itemOffered": { "@type": "Service", "name": "Manuelle Lymphdrainage" }
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Klassische Massage",
+                  "description": "30 Minuten Behandlungszeit",
+                  "price": "86.00",
+                  "priceCurrency": "EUR",
+                  "itemOffered": { "@type": "Service", "name": "Klassische Massage" }
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Hausbesuch",
+                  "description": "Anfahrtspauschale zzgl. 0,50 € pro km",
+                  "price": "28.00",
+                  "priceCurrency": "EUR",
+                  "itemOffered": { "@type": "Service", "name": "Hausbesuch" }
                 }
               ]
             })
@@ -276,50 +273,42 @@ export default function Document() {
               "mainEntity": [
                 {
                   "@type": "Question",
-                  "name": "Was kostet eine Physiotherapie-Behandlung bei Saim Mobilephysio?",
+                  "name": "Erstattet meine private Krankenversicherung die Behandlung?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Die Therapiedauer beträgt 60 Minuten. Mit ärztlichem Rezept kostet eine Behandlung 170€ (ohne Mehrwertsteuer). Für präventive Behandlungen ohne ärztliche Verordnung beträgt der Preis 190€ inklusive Mehrwertsteuer."
+                    "text": "In der Regel ja. Bei einer Behandlung mit ärztlichem Rezept reichen Sie die Rechnung bei Ihrer PKV ein und erhalten die verordneten Kosten erstattet. Den genauen Erstattungsrahmen klärt Ihr Versicherer."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Welche Leistungen bietet Saim Mobilephysio an?",
+                  "name": "Was bringe ich zum ersten Termin mit?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Wir bieten folgende Leistungen an: Manuelle Therapie (MT), Physiotherapie, Manuelle Lymphdrainage (MLD), Atemtherapie, Migränetherapie, Akupressur, Beckenboden- & Rückentraining, Koordination-, Ausdauer- & Krafttraining, Wellnessbehandlungen (Gesicht & Dekolleté), Kinesiologische Tapetechniken, Massage, Ozontherapie (Hochfrequenztherapie), und Plasma-One-Therapie."
+                    "text": "Ihr ärztliches Rezept (sofern vorhanden), bequeme Kleidung und gegebenenfalls Vorbefunde. Ich bringe alles Übrige mit – Liege, Materialien, Tapes."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Übernimmt die Krankenkasse die Kosten?",
+                  "name": "Wie lange dauert eine Sitzung?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Saim Mobilephysio ist eine Privatpraxis ohne Vertrag mit gesetzlichen Krankenkassen. Die Rechnung wird direkt an Sie als Patient gestellt. Private Krankenversicherungen (PKV) erstatten entsprechend die verordneten Kosten."
+                    "text": "Verlässlich 60 Minuten. Ich nehme mir die Zeit, die nötig ist – ohne Wechsel zwischen Patienten und ohne den typischen Praxisrhythmus."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Wo bietet Saim Mobilephysio Hausbesuche an?",
+                  "name": "Kann ich auch ohne ärztliche Verordnung behandelt werden?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Wir bieten mobile Physiotherapie mit Hausbesuchen in Sankt Augustin und Umgebung an."
+                    "text": "Ja. Wenn Sie präventiv arbeiten möchten – Personal Training, Wellness oder vorbeugende Manualtherapie – ist das jederzeit möglich. Es gelten die Sätze des Honorarkatalogs; bitte sprechen Sie mich für ein individuelles Angebot an."
                   }
                 },
                 {
                   "@type": "Question",
-                  "name": "Wer führt die Behandlungen durch?",
+                  "name": "Behandeln Sie auch außerhalb von Sankt Augustin?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Die Behandlungen werden von Faranak Nokhbehzaeem durchgeführt, einer staatlich anerkannten Physiotherapeutin, Manualtherapeutin, Ödemtherapeutin und Personal Trainerin."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Wie lange dauert eine Behandlung?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Die Therapiedauer beträgt 60 Minuten. Einige spezielle Behandlungen wie Ozontherapie und Plasma-One-Therapie dauern 30 Minuten, werden aber als volle Stunde abgerechnet."
+                    "text": "Ich fahre regelmäßig in einem Radius von 30 km. Falls Ihr Wohnort weiter entfernt liegt, sprechen Sie mich gern an – vieles lässt sich individuell einrichten."
                   }
                 }
               ]

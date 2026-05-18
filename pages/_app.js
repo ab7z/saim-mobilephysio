@@ -2,27 +2,27 @@ import '../styles/globals.css';
 import Layout from '../components/Layout';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import { Open_Sans, Roboto } from 'next/font/google';
+import { Manrope, JetBrains_Mono } from 'next/font/google';
 
 config.autoAddCss = false;
 
-const openSans = Open_Sans({
-    weight: ['400', '700'],
+const manrope = Manrope({
+    weight: ['300', '400', '500', '600', '700', '800'],
     subsets: ['latin'],
     display: 'swap',
-    variable: '--font-open-sans',
+    variable: '--font-manrope',
 });
 
-const roboto = Roboto({
-    weight: ['400'],
+const jetbrainsMono = JetBrains_Mono({
+    weight: ['400', '500'],
     subsets: ['latin'],
     display: 'swap',
-    variable: '--font-roboto',
+    variable: '--font-mono',
 });
 
 export default function MyApp({ Component, pageProps }) {
     return (
-        <div className={`${openSans.variable} ${roboto.variable}`}>
+        <div className={`${manrope.variable} ${jetbrainsMono.variable}`}>
             <Layout>
                 <Component { ...pageProps } />
             </Layout>

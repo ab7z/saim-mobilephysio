@@ -1,75 +1,91 @@
 .nav {
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 50;
+    background: rgba(251, 249, 245, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line-2);
 }
 
-.ul {
-    width: 90%;
+.inner {
+    max-width: 1280px;
     margin: 0 auto;
+    padding: 14px 24px;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
-.li:not(:last-of-type) {
-    margin-right: 5rem;
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--ink);
 }
 
-.li {
-    font-size: .8rem;
-    text-decoration: none;
-    list-style: none;
-    padding-bottom: .5rem;
-    position: relative;
-    color: rgba(0, 0, 0, .8);
-    transition: transform .3s;
+.brandMark {
+    width: 32px;
+    height: 32px;
+    background: var(--ink);
+    color: var(--cream);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    flex-shrink: 0;
 }
 
-.li a {
-    color: rgba(0, 0, 0, .8);
-    text-decoration: none;
-    display: block;
+.brandName {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
 }
 
-.li:before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    position: absolute;
-    background-color: transparent;
-    bottom: 0;
-    transition: width .4s ease-in-out;
+.brandTop {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
 }
 
-.li:not(:first-of-type):hover {
-    transform: scale(1.1);
+.brandBot {
+    font-family: var(--font-mono), monospace;
+    font-size: 9px;
+    color: var(--ink-2);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
-.li:not(:first-of-type):hover a {
-    color: black;
+.links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
-.li:not(:first-of-type):hover:before {
-    background-color: var(--custom-green);
-    width: 100%;
+.links a {
+    padding: 8px 14px;
+    font-size: 13px;
+    color: var(--ink-2);
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.15s;
 }
 
-@media (max-width: 1200px) {
-    .li {
-        font-size: .7rem;
-        display: contents;
+.links a:hover {
+    color: var(--ink);
+    background: var(--cream);
+}
+
+@media (max-width: 720px) {
+    .links {
+        flex-wrap: wrap;
     }
-}
 
-@media (max-width: 425px) {
-    .li:not(:first-of-type) {
+    .brandBot {
         display: none;
     }
 }

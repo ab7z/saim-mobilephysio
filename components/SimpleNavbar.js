@@ -1,50 +1,33 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/components/SimpleNavbar.module.css';
 
+const LINKS = [
+    { href: '/', label: 'Home' },
+    { href: '/#about', label: 'Über mich' },
+    { href: '/#leistungen', label: 'Leistungen' },
+    { href: '/#preise', label: 'Preise' },
+    { href: '/#kontakt', label: 'Kontakt' },
+];
+
 export default function SimpleNavbar() {
     return (
-        <>
-            <nav className={ styles.nav }>
-                <ul className={ styles.ul }>
-                    <li className={ styles.li }>
-                        <Link href="/">
-                            <Image
-                                src={ '/logo.svg' }
-                                alt={ 'logo' }
-                                width={ 50 }
-                                height={ 50 }
-                                quality={ 80 }
-                            />
-                        </Link>
-                    </li>
-                    <li className={ styles.li }>
-                        <Link href="/" aria-label={'Home'}>
-                            Home
-                        </Link>
-                    </li>
-                    <li className={ styles.li }>
-                        <Link href="/#intro" aria-label={'Über mich'}>
-                            Über mich
-                        </Link>
-                    </li>
-                    <li className={ styles.li }>
-                        <Link href="/#services" aria-label={'Leistungen'}>
-                            Leistungen
-                        </Link>
-                    </li>
-                    <li className={ styles.li }>
-                        <Link href="/#prices" aria-label={'Preise'}>
-                            Preise
-                        </Link>
-                    </li>
-                    <li className={ styles.li }>
-                        <Link href="/#contact" aria-label={'Kontakt'}>
-                            Kontakt
-                        </Link>
-                    </li>
+        <nav className={ styles.nav } aria-label="Hauptnavigation">
+            <div className={ styles.inner }>
+                <Link href="/" className={ styles.brand } aria-label="Zur Startseite">
+                    <span className={ styles.brandMark } aria-hidden="true">S</span>
+                    <span className={ styles.brandName }>
+                        <span className={ styles.brandTop }>Saim Mobilephysio</span>
+                        <span className={ styles.brandBot }>Privatpraxis · 30 km St. Augustin</span>
+                    </span>
+                </Link>
+                <ul className={ styles.links }>
+                    { LINKS.map((link) => (
+                        <li key={ link.href }>
+                            <Link href={ link.href }>{ link.label }</Link>
+                        </li>
+                    )) }
                 </ul>
-            </nav>
-        </>
+            </div>
+        </nav>
     );
 }
