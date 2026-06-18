@@ -16,7 +16,7 @@
 
 .numTag {
     font-family: var(--font-mono), monospace;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--terra);
     background: rgba(245, 241, 236, 0.06);
     padding: 4px 8px;
@@ -41,7 +41,7 @@
     color: rgba(245, 241, 236, 0.65);
     margin-top: 16px;
     max-width: 540px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .grid {
@@ -76,7 +76,7 @@
 
 .infoLbl {
     font-family: var(--font-mono), monospace;
-    font-size: 10px;
+    font-size: 12px;
     color: rgba(245, 241, 236, 0.5);
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -84,7 +84,7 @@
 }
 
 .infoVal {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: var(--cream);
 }
@@ -117,7 +117,7 @@
     padding: 14px 16px;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .successMessage {
@@ -159,7 +159,7 @@
     border: 1px solid var(--line);
     border-radius: 8px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--ink);
     display: flex;
     align-items: center;
@@ -215,7 +215,7 @@
 
 .field label {
     font-family: var(--font-mono), monospace;
-    font-size: 10px;
+    font-size: 12px;
     color: var(--ink-2);
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -228,7 +228,7 @@
     border-radius: 6px;
     padding: 11px 13px;
     font: inherit;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--ink);
     outline: none;
     transition: border-color 0.2s, background 0.2s;
@@ -247,7 +247,7 @@
 
 .hint {
     font-family: var(--font-mono), monospace;
-    font-size: 10px;
+    font-size: 12px;
     color: var(--ink-3);
 }
 
@@ -267,7 +267,7 @@
     background: var(--cta);
     color: #fff;
     font: inherit;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     display: inline-flex;
@@ -287,7 +287,7 @@
 
 .submit small {
     color: var(--ink-2);
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
     flex: 1;
     min-width: 200px;

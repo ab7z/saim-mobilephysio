@@ -15,7 +15,7 @@
 
 .numTag {
     font-family: var(--font-mono), monospace;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--terra-deep);
     background: var(--cream);
     padding: 4px 8px;
@@ -40,7 +40,7 @@
     color: var(--ink-2);
     margin-top: 16px;
     max-width: 540px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .grid {
@@ -75,7 +75,7 @@
 }
 
 .quote p {
-    font-size: 17px;
+    font-size: 21px;
     line-height: 1.55;
     color: var(--ink);
     font-weight: 500;
@@ -96,19 +96,19 @@
     display: grid;
     place-items: center;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--terra-deep);
 }
 
 .name {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--ink);
 }
 
 .role {
     font-family: var(--font-mono), monospace;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--ink-2);
     text-transform: uppercase;
     letter-spacing: 0.06em;

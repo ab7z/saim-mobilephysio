@@ -242,16 +242,7 @@ export default function Document() {
                 },
                 {
                   "@type": "Service",
-                  "name": "Ozontherapie (Hochfrequenztherapie)",
-                  "provider": {
-                    "@type": "MedicalBusiness",
-                    "name": "Saim Mobilephysio"
-                  },
-                  "serviceType": "Physiotherapie"
-                },
-                {
-                  "@type": "Service",
-                  "name": "Plasma-One-Therapie",
+                  "name": "Ozon- / Plasma-Therapie (Hochfrequenz- & Plasma-Anwendung)",
                   "provider": {
                     "@type": "MedicalBusiness",
                     "name": "Saim Mobilephysio"

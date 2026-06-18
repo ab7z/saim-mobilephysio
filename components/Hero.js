@@ -1,5 +1,6 @@
 import styles from '../styles/components/Hero.module.css';
 import Navbar from './Navbar';
+import HeroBackdrop from './HeroBackdrop';
 
 const ChevronRight = ({ size = 14 }) => (
     <svg width={ size } height={ size } viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -20,6 +21,7 @@ export default function Hero() {
         <>
             <Navbar/>
             <section className={ styles.hero } id="home" aria-labelledby="hero-title">
+                <HeroBackdrop/>
                 <div className={ styles.inner }>
                     <div className={ styles.top }>
                         <div className={ styles.tag }>
@@ -47,7 +49,7 @@ export default function Hero() {
                     <div className={ styles.bottomRow }>
                         <div className={ styles.statsGrid }>
                             <div className={ styles.statCell }>
-                                <div className={ styles.statNum }>26<span>J</span></div>
+                                <div className={ styles.statNum }>26<span>Jahre</span></div>
                                 <div className={ styles.statLbl }>Berufs&shy;erfahrung</div>
                             </div>
                             <div className={ styles.statCell }>
@@ -55,37 +57,14 @@ export default function Hero() {
                                 <div className={ styles.statLbl }>Einzugs&shy;gebiet</div>
                             </div>
                             <div className={ styles.statCell }>
-                                <div className={ styles.statNum }>60<span>min</span></div>
+                                <div className={ styles.statNum }>60<span>Minuten</span></div>
                                 <div className={ styles.statLbl }>Pro Sitzung</div>
                             </div>
                             <div className={ styles.statCell }>
-                                <div className={ styles.statNum }>13</div>
+                                <div className={ styles.statNum }>12</div>
                                 <div className={ styles.statLbl }>Behandlungs&shy;formen</div>
                             </div>
                         </div>
-                        <aside className={ styles.side } aria-label="Termin-Status">
-                            <div className={ styles.sideHead }>
-                                <span className={ styles.sideLbl }>Aktueller Status</span>
-                                <span className={ styles.pill }>
-                                    <span className={ styles.pulse } aria-hidden="true"/>verfügbar
-                                </span>
-                            </div>
-                            <div className={ styles.sideRow }>
-                                <span className={ styles.k }>Diese Woche</span>
-                                <span className={ styles.v }>Termine frei</span>
-                            </div>
-                            <div className={ styles.sideRow }>
-                                <span className={ styles.k }>Nächste Woche</span>
-                                <span className={ styles.v }>Termine frei</span>
-                            </div>
-                            <div className={ styles.sideRow }>
-                                <span className={ styles.k }>Antwortzeit</span>
-                                <span className={ styles.v }>≤ 24 h</span>
-                            </div>
-                            <a href="#anmeldung" className={ styles.sideCta }>
-                                Termin sichern <ChevronRight size={ 11 }/>
-                            </a>
-                        </aside>
                     </div>
                 </div>
 

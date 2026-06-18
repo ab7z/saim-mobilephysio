@@ -1,11 +1,15 @@
 .hero {
     padding: 64px 0 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .inner {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 24px;
+    position: relative;
+    z-index: 1;
 }
 
 .top {
@@ -21,7 +25,7 @@
     border: 1px solid var(--line-2);
     border-radius: 999px;
     font-family: var(--font-mono), monospace;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--ink-2);
     margin-bottom: 32px;
 }
@@ -48,7 +52,7 @@
 }
 
 .lede {
-    font-size: 17px;
+    font-size: 21px;
     line-height: 1.6;
     color: var(--ink-2);
     margin-bottom: 36px;
@@ -67,7 +71,7 @@
     border-radius: 6px;
     background: var(--cta);
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
@@ -86,7 +90,7 @@
     border-radius: 6px;
     background: transparent;
     color: var(--ink);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     border: 1px solid var(--line);
     display: inline-flex;
@@ -101,10 +105,6 @@
 
 .bottomRow {
     margin-top: 56px;
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 48px;
-    align-items: end;
 }
 
 .statsGrid {
@@ -132,112 +132,19 @@
 }
 
 .statNum span {
-    font-size: 0.5em;
+    font-size: 0.65em;
     color: var(--ink-3);
     font-weight: 500;
+    margin-left: 0.3em;
 }
 
 .statLbl {
     font-family: var(--font-mono), monospace;
-    font-size: 10px;
+    font-size: 12px;
     color: var(--ink-2);
     text-transform: uppercase;
     letter-spacing: 0.08em;
     margin-top: 8px;
-}
-
-.side {
-    background: var(--cream);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 22px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.sideHead {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 14px;
-    margin-bottom: 8px;
-    border-bottom: 1px solid var(--line-2);
-}
-
-.sideLbl {
-    font-family: var(--font-mono), monospace;
-    font-size: 10px;
-    color: var(--ink-3);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-.pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 4px 10px;
-    border-radius: 999px;
-    background: var(--paper);
-    border: 1px solid var(--line-2);
-    font-family: var(--font-mono), monospace;
-    font-size: 10px;
-    color: var(--ink);
-}
-
-.pulse {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--green);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.4; }
-}
-
-.sideRow {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 8px 0;
-    font-size: 13px;
-    color: var(--ink-2);
-}
-
-.k {
-    font-family: var(--font-mono), monospace;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
-
-.v {
-    color: var(--ink);
-    font-weight: 600;
-}
-
-.sideCta {
-    margin-top: 8px;
-    padding: 14px 18px;
-    border-radius: 8px;
-    background: var(--cta);
-    color: #fff;
-    text-align: center;
-    font-weight: 600;
-    font-size: 14px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: background 0.15s;
-}
-
-.sideCta:hover {
-    background: var(--cta-deep);
 }
 
 .trust {
@@ -246,6 +153,8 @@
     background: var(--cream-2);
     padding: 20px 0;
     margin-top: 80px;
+    position: relative;
+    z-index: 1;
 }
 
 .trustInner {
@@ -260,7 +169,7 @@
 
 .trustLbl {
     font-family: var(--font-mono), monospace;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--ink-3);
     text-transform: uppercase;
     letter-spacing: 0.12em;
@@ -271,7 +180,7 @@
     align-items: center;
     gap: 10px;
     color: var(--ink);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -289,8 +198,6 @@
     }
 
     .bottomRow {
-        grid-template-columns: 1fr;
-        gap: 24px;
         margin-top: 40px;
     }
 
@@ -305,7 +212,7 @@
     }
 
     .lede {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .statsGrid {

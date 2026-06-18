@@ -15,7 +15,7 @@
 
 .numTag {
     font-family: var(--font-mono), monospace;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--terra-deep);
     background: var(--cream);
     padding: 4px 8px;
@@ -40,7 +40,7 @@
     color: var(--ink-2);
     margin-top: 16px;
     max-width: 540px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .grid {
@@ -88,7 +88,7 @@
 
 .tag {
     font-family: var(--font-mono), monospace;
-    font-size: 10px;
+    font-size: 12px;
     color: var(--ink-3);
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -103,7 +103,7 @@
 
 .desc {
     color: var(--ink-2);
-    font-size: 13.5px;
+    font-size: 20px;
     line-height: 1.55;
     flex: 1;
 }
@@ -116,7 +116,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: var(--font-mono), monospace;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--ink-2);
 }
 
@@ -130,7 +130,7 @@
     margin: 24px auto 0;
     padding: 0 24px;
     color: var(--ink-2);
-    font-size: 13px;
+    font-size: 18px;
 }
 
 .note em {

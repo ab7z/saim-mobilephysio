@@ -16,7 +16,7 @@
 
 .numTag {
     font-family: var(--font-mono), monospace;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--terra-deep);
     background: var(--paper);
     padding: 4px 8px;
@@ -41,7 +41,7 @@
     color: var(--ink-2);
     margin-top: 16px;
     max-width: 540px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .list {
@@ -76,7 +76,7 @@
 
 .num {
     font-family: var(--font-mono), monospace;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--terra-deep);
     background: var(--cream);
     border: 1px solid rgba(168, 112, 63, 0.2);
@@ -86,7 +86,7 @@
 }
 
 .q {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: -0.01em;
     color: var(--ink);
@@ -94,7 +94,7 @@
 
 .a {
     color: var(--ink-2);
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.65;
     padding: 0 24px 22px 70px;
 }

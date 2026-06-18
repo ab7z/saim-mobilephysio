@@ -138,26 +138,14 @@ const SERVICES = [
     {
         code: 'OZN',
         roman: 'xii.',
-        name: 'Ozontherapie *',
-        desc: 'Hochfrequenz­therapie zur Anregung von Zell­regeneration und Geweb­eheilung.',
+        name: 'Ozon- / Plasma-Therapie *',
+        time: '30 / 60 min',
+        desc: 'Hochfrequenz­therapie und Plasma-Anwendung zur Anregung von Zell- und Haut­regeneration sowie Geweb­eheilung.',
         icon: (
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
                 <circle cx="9" cy="9" r="2" fill="currentColor"/>
                 <path d="M9 1.5v3M9 13.5v3M1.5 9h3M13.5 9h3M3.5 3.5l2 2M12.5 12.5l2 2M3.5 14.5l2-2M12.5 5.5l2-2"
                       stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
-            </svg>
-        ),
-    },
-    {
-        code: 'PLA',
-        roman: 'xiii.',
-        name: 'Plasma-One-Therapie *',
-        desc: 'Plasma-Anwendung zur Unter­stützung der Haut­regeneration und Geweb­eheilung.',
-        icon: (
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                <circle cx="9" cy="9" r="6" stroke="currentColor" strokeWidth="1.4"/>
-                <path d="M9 3v12M3 9h12" stroke="currentColor" strokeWidth="1.4" opacity="0.4"/>
-                <circle cx="9" cy="9" r="2.5" fill="currentColor"/>
             </svg>
         ),
     },
@@ -176,7 +164,7 @@ export default function Services() {
                         &nbsp;— in Ihrer eigenen Wohnung.
                     </h2>
                     <p className={ styles.sub }>
-                        Behandlungs&shy;formen für jeden Bedarf — von der akuten Manualtherapie
+                        Zwölf Behandlungs&shy;formen für jeden Bedarf — von der akuten Manualtherapie
                         bis zur präventiven Wellness&shy;anwendung.
                     </p>
                 </div>
@@ -192,7 +180,7 @@ export default function Services() {
                         <p className={ styles.desc }>{ s.desc }</p>
                         <div className={ styles.foot }>
                             <span>{ s.code }</span>
-                            <span className={ styles.price }>60 min</span>
+                            <span className={ styles.price }>{ s.time || '60 min' }</span>
                         </div>
                     </article>
                 )) }

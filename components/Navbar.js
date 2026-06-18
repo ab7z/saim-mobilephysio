@@ -49,9 +49,6 @@ export default function Navbar() {
                     )) }
                 </ul>
                 <div className={ styles.right }>
-                    <span className={ styles.status } aria-hidden="true">
-                        <span className={ styles.pulse }/>Termine verfügbar
-                    </span>
                     <button
                         type="button"
                         className={ styles.cta }
