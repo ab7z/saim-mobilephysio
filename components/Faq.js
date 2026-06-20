@@ -42,15 +42,15 @@ export default function Faq() {
             </header>
             <div className={ styles.list }>
                 { FAQ.map((item, i) => (
-                    <details className={ styles.item } key={ item.q } open={ i === 0 }>
-                        <summary className={ styles.summary }>
+                    <article className={ styles.item } key={ item.q }>
+                        <div className={ styles.summary }>
                             <span className={ styles.num }>
                                 { String(i + 1).padStart(2, '0') }
                             </span>
-                            <span className={ styles.q }>{ item.q }</span>
-                        </summary>
+                            <h3 className={ styles.q }>{ item.q }</h3>
+                        </div>
                         <div className={ styles.a }>{ item.a }</div>
-                    </details>
+                    </article>
                 )) }
             </div>
         </section>
