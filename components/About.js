@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import faranak from '../public/f.webp';
 import styles from '../styles/components/About.module.css';
+import {
+    GERMANY_QUALIFICATION_YEAR,
+    IRAN_EXPERIENCE_YEARS,
+    IRAN_QUALIFICATION_YEAR,
+    getTotalExperienceYears,
+} from '../lib/experience';
 
 const Check = () => (
     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
@@ -11,7 +17,7 @@ const Check = () => (
 
 export default function About() {
     const currentYear = new Date().getFullYear();
-    const experienceYears = currentYear - 1999;
+    const totalExperienceYears = getTotalExperienceYears();
 
     return (
         <section className={ styles.section } id="about" aria-labelledby="about-title">
@@ -27,7 +33,7 @@ export default function About() {
                         &nbsp;&mdash; bevor sie behandelt.
                     </h2>
                     <p className={ styles.sub }>
-                        Über zwei Jahrzehnte Berufserfahrung in Klinik und Privatpraxis &mdash;
+                        { totalExperienceYears } Jahre Berufserfahrung in Klinik und Privatpraxis &mdash;
                         vom Helios Klinikum Siegburg bis zur eigenen mobilen Praxis.
                     </p>
                 </div>
@@ -43,25 +49,25 @@ export default function About() {
                             alt="Faranak Nokhbehzaeem, Physiotherapeutin"
                             placeholder="blur"
                             sizes="(max-width: 980px) 180px, 180px"
-                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
                         />
                     </div>
                     <div className={ styles.caption }>
                         <strong>Faranak Nokhbehzaeem</strong>
-                        Physio&shy;therapeutin · seit 1999
+                        Physio&shy;therapeutin · { totalExperienceYears } Jahre Erfahrung
                     </div>
                     <div className={ styles.cardFoot }>
                         <div className={ styles.row }>
                             <span className={ styles.k }>Spezialisierung</span>
-                            <span className={ styles.v }>Manual / Lymph</span>
+                            <span className={ styles.v }>Manuell / Lymph</span>
                         </div>
                         <div className={ styles.row }>
                             <span className={ styles.k }>Ausbildung</span>
-                            <span className={ styles.v }>DE 2011 · IR 1999</span>
+                            <span className={ styles.v }>DE { GERMANY_QUALIFICATION_YEAR } · IR { IRAN_QUALIFICATION_YEAR }</span>
                         </div>
                         <div className={ styles.row }>
                             <span className={ styles.k }>Erfahrung</span>
-                            <span className={ styles.v }>{ experienceYears } Jahre</span>
+                            <span className={ styles.v }>{ totalExperienceYears } Jahre</span>
                         </div>
                         <div className={ styles.row }>
                             <span className={ styles.k }>Sprachen</span>
@@ -72,13 +78,13 @@ export default function About() {
                 <div className={ styles.body }>
                     <p className={ styles.lead }>
                         Mein Name ist <span className={ styles.accent }>Faranak Nokhbehzaeem</span>.
-                        Seit über zwei Jahrzehnten begleite ich Menschen zurück in einen Körper,
+                        Seit { totalExperienceYears } Jahren begleite ich Menschen zurück in einen Körper,
                         der sich gut anfühlt.
                     </p>
                     <p className={ styles.p }>
                         Staatlich anerkannte Manual&shy;thera&shy;peutin, Physio&shy;thera&shy;peutin,
                         Personal&shy;trainerin und Ödem-Therapeutin. Meine Aus&shy;bildung habe ich
-                        2011 in Deutsch&shy;land abgeschlossen &mdash; auf Basis von sechs Jahren
+                        { ' ' }{ GERMANY_QUALIFICATION_YEAR } in Deutsch&shy;land abgeschlossen &mdash; auf Basis von { IRAN_EXPERIENCE_YEARS } Jahren
                         Berufs&shy;erfahrung im Iran.
                     </p>
                     <p className={ styles.p }>
