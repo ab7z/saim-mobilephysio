@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Seo from '../components/Seo';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Services from '../components/Services';
@@ -8,26 +8,17 @@ import Testimonials from '../components/Testimonials';
 import Faq from '../components/Faq';
 import Form from '../components/Form';
 import Contact from '../components/Contact';
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, getHomeStructuredData } from '../lib/seo';
 
 export default function Home() {
     return (
         <>
-            <Head>
-                <title>Saim Mobilephysio – Mobile Physiotherapie in Sankt Augustin</title>
-                <meta
-                    name="description"
-                    content="Mobile Physiotherapie in Sankt Augustin. Manualtherapie, Lymphdrainage, Personal Training und Honorarkatalog. Hausbesuche im Umkreis von 30 km."
-                />
-                <meta
-                    property="og:title"
-                    content="Saim Mobilephysio – Mobile Physiotherapie in Sankt Augustin"
-                />
-                <meta property="og:url" content="https://saim-mobilephysio.de"/>
-                <meta
-                    name="twitter:title"
-                    content="Saim Mobilephysio – Mobile Physiotherapie"
-                />
-            </Head>
+            <Seo
+                title={ DEFAULT_TITLE }
+                description={ DEFAULT_DESCRIPTION }
+                path="/"
+                structuredData={ getHomeStructuredData() }
+            />
 
             <Hero/>
             <About/>

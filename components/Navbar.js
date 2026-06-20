@@ -12,21 +12,25 @@ const LINKS = [
 export default function Navbar() {
     const [open, setOpen] = useState(false);
 
-    const scroll = (id) => {
-        const el = document.querySelector('#' + id);
+    const scroll = (event, id) => {
+        if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        const el = document.getElementById(id);
         if (!el) return;
+
+        event.preventDefault();
         const y = el.getBoundingClientRect().top + window.scrollY - 70;
         window.scrollTo({ top: y, behavior: 'smooth' });
+        window.history.pushState(null, '', '#' + id);
         setOpen(false);
     };
 
     return (
         <nav className={ styles.nav } aria-label="Hauptnavigation">
             <div className={ styles.inner }>
-                <button
-                    type="button"
+                <a
+                    href="#home"
                     className={ styles.brand }
-                    onClick={ () => window.scrollTo({ top: 0, behavior: 'smooth' }) }
+                    onClick={ (event) => scroll(event, 'home') }
                     aria-label="Zum Seitenanfang"
                 >
                     <span className={ styles.brandMark } aria-hidden="true">S</span>
@@ -34,32 +38,32 @@ export default function Navbar() {
                         <span className={ styles.brandTop }>Saim Mobilephysio</span>
                         <span className={ styles.brandBot }>Privatpraxis · 30 km St. Augustin</span>
                     </span>
-                </button>
+                </a>
                 <ul className={ styles.links }>
                     { LINKS.map((link) => (
                         <li key={ link.id }>
-                            <button
-                                type="button"
+                            <a
+                                href={ `#${link.id}` }
                                 className={ styles.linkBtn }
-                                onClick={ () => scroll(link.id) }
+                                onClick={ (event) => scroll(event, link.id) }
                             >
                                 { link.label }
-                            </button>
+                            </a>
                         </li>
                     )) }
                 </ul>
                 <div className={ styles.right }>
-                    <button
-                        type="button"
+                    <a
+                        href="#anmeldung"
                         className={ styles.cta }
-                        onClick={ () => scroll('anmeldung') }
+                        onClick={ (event) => scroll(event, 'anmeldung') }
                     >
                         Termin anfragen
                         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden="true">
                             <path d="M2 5.5h7m-3-3l3 3-3 3" stroke="currentColor" strokeWidth="1.4"
                                   strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-                    </button>
+                    </a>
                     <button
                         type="button"
                         className={ styles.toggle }
@@ -79,23 +83,23 @@ export default function Navbar() {
                 <ul id="mobile-nav-menu" className={ styles.mobileMenu }>
                     { LINKS.map((link) => (
                         <li key={ link.id }>
-                            <button
-                                type="button"
+                            <a
+                                href={ `#${link.id}` }
                                 className={ styles.mobileLink }
-                                onClick={ () => scroll(link.id) }
+                                onClick={ (event) => scroll(event, link.id) }
                             >
                                 { link.label }
-                            </button>
+                            </a>
                         </li>
                     )) }
                     <li>
-                        <button
-                            type="button"
+                        <a
+                            href="#anmeldung"
                             className={ styles.mobileCta }
-                            onClick={ () => scroll('anmeldung') }
+                            onClick={ (event) => scroll(event, 'anmeldung') }
                         >
                             Termin anfragen
-                        </button>
+                        </a>
                     </li>
                 </ul>
             ) }
