@@ -156,7 +156,7 @@ export default function Services() {
         <section className={ styles.section } id="leistungen" aria-labelledby="services-title">
             <header className={ styles.head }>
                 <div>
-                    <div className={ styles.numTag }>02 / Leistungen</div>
+                    <div className={ styles.numTag }>Leistungen</div>
                 </div>
                 <div>
                     <h2 id="services-title" className={ styles.title }>

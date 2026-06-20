@@ -5,7 +5,7 @@ export default function Testimonials() {
         <section className={ styles.section } aria-labelledby="testi-title">
             <header className={ styles.head }>
                 <div>
-                    <div className={ styles.numTag }>05 / Bewertungen</div>
+                    <div className={ styles.numTag }>Bewertungen</div>
                 </div>
                 <div>
                     <h2 id="testi-title" className={ styles.title }>

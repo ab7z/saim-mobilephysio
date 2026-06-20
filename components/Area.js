@@ -18,7 +18,7 @@ export default function Area() {
         <section className={ styles.section } id="einzugsgebiet" aria-labelledby="area-title">
             <header className={ styles.head }>
                 <div>
-                    <div className={ styles.numTag }>04 / Einzugsgebiet</div>
+                    <div className={ styles.numTag }>Einzugsgebiet</div>
                 </div>
                 <div>
                     <h2 id="area-title" className={ styles.title }>

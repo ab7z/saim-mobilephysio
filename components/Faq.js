@@ -28,7 +28,7 @@ export default function Faq() {
         <section className={ styles.section } aria-labelledby="faq-title">
             <header className={ styles.head }>
                 <div>
-                    <div className={ styles.numTag }>06 / FAQ</div>
+                    <div className={ styles.numTag }>FAQ</div>
                 </div>
                 <div>
                     <h2 id="faq-title" className={ styles.title }>

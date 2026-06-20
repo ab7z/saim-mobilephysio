@@ -37,7 +37,7 @@ export default function Form() {
         <section className={ styles.section } id="anmeldung" aria-labelledby="form-title">
             <header className={ styles.head }>
                 <div>
-                    <div className={ styles.numTag }>07 / Anmeldung</div>
+                    <div className={ styles.numTag }>Anmeldung</div>
                 </div>
                 <div>
                     <h2 id="form-title" className={ styles.title }>

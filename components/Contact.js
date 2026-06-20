@@ -12,7 +12,7 @@ export default function Contact() {
         <section className={ styles.section } id="kontakt" aria-labelledby="contact-title">
             <header className={ styles.head }>
                 <div>
-                    <div className={ styles.numTag }>08 / Kontakt</div>
+                    <div className={ styles.numTag }>Kontakt</div>
                 </div>
                 <div>
                     <h2 id="contact-title" className={ styles.title }>

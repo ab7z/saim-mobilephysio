@@ -24,7 +24,7 @@ export default function About() {
             <header className={ styles.head }>
                 <div>
                     <div className={ styles.num }>
-                        <span className={ styles.numTag }>01 / Über mich</span>
+                        <span className={ styles.numTag }>Über mich</span>
                     </div>
                 </div>
                 <div>
