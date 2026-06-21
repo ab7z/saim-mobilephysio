@@ -1,7 +1,7 @@
 import styles from '../styles/components/Hero.module.css';
 import Navbar from './Navbar';
 import HeroBackdrop from './HeroBackdrop';
-import { getPractitionerExperienceYears } from '../lib/practitioner';
+import { getTotalExperienceYears } from '../lib/experience';
 
 const ChevronRight = ({ size = 14 }) => (
     <svg width={ size } height={ size } viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -18,7 +18,7 @@ const Check = ({ size = 14 }) => (
 );
 
 export default function Hero() {
-    const experienceYears = getPractitionerExperienceYears();
+    const totalExperienceYears = getTotalExperienceYears();
 
     return (
         <>
@@ -36,7 +36,7 @@ export default function Hero() {
                         </h1>
                         <p className={ styles.lede }>
                             Faranak Nokhbehzaeem &mdash; staatlich anerkannte Manual&shy;therapeutin
-                            mit { experienceYears } Jahren Berufserfahrung. Ohne Wartezeit, ohne Anfahrt, in der
+                            mit { totalExperienceYears } Jahren Berufserfahrung. Ohne Wartezeit, ohne Anfahrt, in der
                             Privat&shy;sphäre Ihres Zuhauses.
                         </p>
                         <div className={ styles.actions }>
@@ -52,7 +52,7 @@ export default function Hero() {
                     <div className={ styles.bottomRow }>
                         <div className={ styles.statsGrid }>
                             <div className={ styles.statCell }>
-                                <div className={ styles.statNum }>{ experienceYears }<span>Jahre</span></div>
+                                <div className={ styles.statNum }>{ totalExperienceYears }<span>Jahre</span></div>
                                 <div className={ styles.statLbl }>Berufs&shy;erfahrung</div>
                             </div>
                             <div className={ styles.statCell }>
