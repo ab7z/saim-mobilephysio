@@ -277,15 +277,14 @@ export default function Privacy() {
                     <p><strong>Google Fonts (Next.js Optimierung)</strong></p>
 
                     <p>Diese Website nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts
-                        (Open Sans und Roboto), die von Google bereitgestellt werden. Diese werden durch die
-                        Next.js-Font-Optimierung geladen, wodurch beim ersten Laden der Seite eine Verbindung zu
-                        Google-Servern hergestellt werden kann. Ihr Browser lädt die benötigten Web Fonts in Ihren
-                        Browsercache, um Texte und Schriftarten korrekt anzuzeigen.</p>
+                        (Manrope und JetBrains Mono), die über die Next.js-Font-Optimierung eingebunden werden.
+                        Die Schriftdateien werden beim Erstellen der Website geladen und anschließend lokal über
+                        diese Website ausgeliefert. Beim Besuch der Seite stellt Ihr Browser daher keine Verbindung
+                        zu Google-Font-Servern her.</p>
 
-                    <p>Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google
-                        aufnehmen. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse unsere
-                        Website aufgerufen wurde. Die Nutzung von Google Web Fonts erfolgt im Interesse einer
-                        einheitlichen und ansprechenden Darstellung unserer Online-Angebote. Dies stellt ein
+                    <p>Ihr Browser lädt die benötigten Web Fonts in den Browsercache, um Texte und Schriftarten
+                        korrekt anzuzeigen. Die Nutzung der lokal ausgelieferten Web Fonts erfolgt im Interesse
+                        einer einheitlichen und ansprechenden Darstellung unserer Online-Angebote. Dies stellt ein
                         berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.</p>
 
                     <p>Weitere Informationen zu Google Web Fonts finden Sie unter

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import faranak from '../public/f.webp';
 import styles from '../styles/components/About.module.css';
+import { getPractitionerExperienceYears } from '../lib/practitioner';
 
 const Check = () => (
     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
@@ -11,7 +12,7 @@ const Check = () => (
 
 export default function About() {
     const currentYear = new Date().getFullYear();
-    const experienceYears = currentYear - 1999;
+    const experienceYears = getPractitionerExperienceYears(currentYear);
 
     return (
         <section className={ styles.section } id="about" aria-labelledby="about-title">
