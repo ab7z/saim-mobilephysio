@@ -22,7 +22,7 @@ export default function Area() {
                 </div>
                 <div>
                     <h2 id="area-title" className={ styles.title }>
-                        30 km um <span className={ styles.accent }>Sankt Augustin.</span>
+                        20 km um <span className={ styles.accent }>Sankt Augustin.</span>
                     </h2>
                     <p className={ styles.sub }>
                         Hausbesuche in Sankt Augustin, Bonn, Siegburg und Umgebung.
@@ -33,7 +33,7 @@ export default function Area() {
             <div className={ styles.grid }>
                 <div className={ styles.info }>
                     <p className={ styles.intro }>
-                        Ich behandle Patientinnen und Patienten in einem Umkreis von 30 km um
+                        Ich behandle Patientinnen und Patienten in einem Umkreis von 20 km um
                         Sankt Augustin. Hier eine Auswahl der Orte, in denen ich regelmäßig
                         Hausbesuche durchführe:
                     </p>
@@ -52,13 +52,13 @@ export default function Area() {
                 </div>
                 <div className={ styles.mapCard }>
                     <div className={ styles.mapHead }>
-                        <span>Einzugs&shy;gebiet · Radius 30 km</span>
+                        <span>Einzugs&shy;gebiet · Radius 20 km</span>
                         <span>50.7768° N, 7.1882° E</span>
                     </div>
                     <div className={ styles.map }>
                         <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"
                              style={{ width: '100%', height: '100%' }} role="img"
-                             aria-label="Karte des Einzugsgebiets mit Sankt Augustin im Zentrum und 30 km Radius">
+                             aria-label="Karte des Einzugsgebiets mit Sankt Augustin im Zentrum und 20 km Radius">
                             <defs>
                                 <radialGradient id="rg2" cx="50%" cy="50%" r="50%">
                                     <stop offset="0%" stopColor="#c98a5a" stopOpacity="0.18"/>
@@ -106,8 +106,8 @@ export default function Area() {
                                 <text x="408" y="446">Bad Honnef</text>
                             </g>
                             <g fontFamily="JetBrains Mono, monospace" fontSize="10" fill="#a8703f">
-                                <text x="540" y="306">30km</text>
-                                <text x="380" y="306">15km</text>
+                                <text x="540" y="306">20km</text>
+                                <text x="380" y="306">10km</text>
                             </g>
                         </svg>
                     </div>

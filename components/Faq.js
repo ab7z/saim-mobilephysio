@@ -19,7 +19,7 @@ const FAQ = [
     },
     {
         q: 'Behandeln Sie auch außerhalb von Sankt Augustin?',
-        a: 'Ich fahre regelmäßig in einem Radius von 30 km. Falls Ihr Wohnort weiter entfernt liegt, sprechen Sie mich gern an — vieles lässt sich individuell einrichten.',
+        a: 'Ich fahre regelmäßig in einem Radius von 20 km. Falls Ihr Wohnort weiter entfernt liegt, sprechen Sie mich gern an — vieles lässt sich individuell einrichten.',
     },
 ];
 

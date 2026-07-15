@@ -36,7 +36,7 @@ export default function Navbar() {
                     <span className={ styles.brandMark } aria-hidden="true">S</span>
                     <span className={ styles.brandName }>
                         <span className={ styles.brandTop }>Saim Mobilephysio</span>
-                        <span className={ styles.brandBot }>Privatpraxis · 30 km St. Augustin</span>
+                        <span className={ styles.brandBot }>Privatpraxis · 20 km St. Augustin</span>
                     </span>
                 </a>
                 <ul className={ styles.links }>

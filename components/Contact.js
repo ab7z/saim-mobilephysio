@@ -60,7 +60,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={ styles.card }
-                    aria-label="Standort auf Google Maps ansehen — 30 km um Sankt Augustin"
+                    aria-label="Standort auf Google Maps ansehen — 20 km um Sankt Augustin"
                 >
                     <div className={ styles.icon }>
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
@@ -70,7 +70,7 @@ export default function Contact() {
                         </svg>
                     </div>
                     <div className={ styles.lbl }>Einzugsgebiet</div>
-                    <div className={ styles.val }>30 km um Sankt Augustin</div>
+                    <div className={ styles.val }>20 km um Sankt Augustin</div>
                     <span className={ styles.arrow }>Karte ansehen <Arrow/></span>
                 </a>
             </div>
