@@ -59,7 +59,7 @@ export default function About() {
                     <div className={ styles.cardFoot }>
                         <div className={ styles.row }>
                             <span className={ styles.k }>Spezialisierung</span>
-                            <span className={ styles.v }>Manuell / Lymph</span>
+                            <span className={ styles.v }>Manuell&shy;thera&shy;pie</span>
                         </div>
                         <div className={ styles.row }>
                             <span className={ styles.k }>Ausbildung</span>
@@ -82,7 +82,7 @@ export default function About() {
                         der sich gut anfühlt.
                     </p>
                     <p className={ styles.p }>
-                        Staatlich anerkannte Manual&shy;thera&shy;peutin, Physio&shy;thera&shy;peutin,
+                        Staatlich anerkannte Manuell&shy;thera&shy;peutin, Physio&shy;thera&shy;peutin,
                         Personal&shy;trainerin und Ödem-Therapeutin. Meine Aus&shy;bildung habe ich
                         { ' ' }{ GERMANY_QUALIFICATION_YEAR } in Deutsch&shy;land abgeschlossen &mdash; auf Basis von { IRAN_EXPERIENCE_YEARS } Jahren
                         Berufs&shy;erfahrung im Iran.

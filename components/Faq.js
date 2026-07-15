@@ -15,7 +15,7 @@ const FAQ = [
     },
     {
         q: 'Kann ich auch ohne ärztliche Verordnung behandelt werden?',
-        a: 'Ja. Wenn Sie präventiv arbeiten möchten — Personal Training, Wellness oder vorbeugende Manualtherapie — ist das jederzeit möglich. Es gelten die Sätze des Honorar­katalogs; bitte sprechen Sie mich für ein individuelles Angebot an.',
+        a: 'Ja. Wenn Sie präventiv arbeiten möchten — Personal Training, Wellness oder vorbeugende Manuelltherapie — ist das jederzeit möglich. Es gelten die Sätze des Honorar­katalogs; bitte sprechen Sie mich für ein individuelles Angebot an.',
     },
     {
         q: 'Behandeln Sie auch außerhalb von Sankt Augustin?',

@@ -5,7 +5,7 @@ const SERVICES = [
         code: 'MT',
         roman: 'i.',
         name: 'Manuelle Therapie',
-        desc: 'Gezielte Mobilisation von Gelenken, Wirbeln und Muskel­gewebe nach modernen manual­therapeutischen Standards.',
+        desc: 'Gezielte Mobilisation von Gelenken, Wirbeln und Muskel­gewebe nach modernen manuell­therapeutischen Standards.',
         icon: (
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
                 <circle cx="9" cy="9" r="6.5" stroke="currentColor" strokeWidth="1.4"/>
@@ -164,7 +164,7 @@ export default function Services() {
                         &nbsp;— in Ihrer eigenen Wohnung.
                     </h2>
                     <p className={ styles.sub }>
-                        Zwölf Behandlungs&shy;formen für jeden Bedarf — von der akuten Manualtherapie
+                        Zwölf Behandlungs&shy;formen für jeden Bedarf — von der akuten Manuelltherapie
                         bis zur präventiven Wellness&shy;anwendung.
                     </p>
                 </div>

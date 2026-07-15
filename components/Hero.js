@@ -35,7 +35,7 @@ export default function Hero() {
                             Professionelle Physio&shy;therapie. <span className={ styles.accent }>Bei Ihnen zu&nbsp;Hause.</span>
                         </h1>
                         <p className={ styles.lede }>
-                            Faranak Nokhbehzaeem &mdash; staatlich anerkannte Manual&shy;therapeutin
+                            Faranak Nokhbehzaeem &mdash; staatlich anerkannte Manuell&shy;thera&shy;peutin
                             mit { totalExperienceYears } Jahren Berufserfahrung. Ohne Wartezeit, ohne Anfahrt, in der
                             Privat&shy;sphäre Ihres Zuhauses.
                         </p>
@@ -75,7 +75,7 @@ export default function Hero() {
                     <div className={ styles.trustInner }>
                         <span className={ styles.trustLbl }>Qualifikationen</span>
                         <span className={ styles.trustItem }><Check/>Staatlich anerkannt</span>
-                        <span className={ styles.trustItem }><Check/>Manualtherapie</span>
+                        <span className={ styles.trustItem }><Check/>Manuelltherapie</span>
                         <span className={ styles.trustItem }><Check/>Ödemtherapie</span>
                         <span className={ styles.trustItem }><Check/>Personal Training</span>
                         <span className={ styles.trustItem }><Check/>Helios Klinikum</span>
