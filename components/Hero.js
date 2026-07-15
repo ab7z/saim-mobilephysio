@@ -56,7 +56,7 @@ export default function Hero() {
                                 <div className={ styles.statLbl }>Berufs&shy;erfahrung</div>
                             </div>
                             <div className={ styles.statCell }>
-                                <div className={ styles.statNum }>30<span>km</span></div>
+                                <div className={ styles.statNum }>20<span>km</span></div>
                                 <div className={ styles.statLbl }>Einzugs&shy;gebiet</div>
                             </div>
                             <div className={ styles.statCell }>
