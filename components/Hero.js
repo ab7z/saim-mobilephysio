@@ -78,7 +78,7 @@ export default function Hero() {
                         <span className={ styles.trustItem }><Check/>Manuelltherapie</span>
                         <span className={ styles.trustItem }><Check/>Ödemtherapie</span>
                         <span className={ styles.trustItem }><Check/>Personal Training</span>
-                        <span className={ styles.trustItem }><Check/>Helios Klinikum</span>
+                        <span className={ styles.trustItem }><Check/>Atemtherapie</span>
                     </div>
                 </div>
             </section>

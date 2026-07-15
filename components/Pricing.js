@@ -137,7 +137,7 @@ export default function Pricing() {
                         <div className={ styles.kalkHd }>Kluge Menschen können rechnen:</div>
                         <div>
                             In der Praxis erhält man für eine normale Krankengymnastik meist nur bis
-                            zu 15 Minuten Behandlung (die Zeit zum Umziehen nicht mitgerechnet) und
+                            zu 15 Minuten Behandlung (die Zeit zum An- und Ausziehen nicht mitgerechnet) und
                             zahlt dafür 42 Euro!
                         </div>
                     </div>

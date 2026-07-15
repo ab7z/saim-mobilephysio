@@ -98,11 +98,17 @@ export default function About() {
                     </p>
                     <div className={ styles.creds }>
                         <div className={ styles.cred }><Check/>Manuelle Therapie</div>
+                        <div className={ styles.cred }><Check/>Physiotherapie</div>
                         <div className={ styles.cred }><Check/>Manuelle Lymphdrainage</div>
-                        <div className={ styles.cred }><Check/>Krankengymnastik</div>
-                        <div className={ styles.cred }><Check/>Vibrafit-Training</div>
-                        <div className={ styles.cred }><Check/>Kinesio-Taping</div>
-                        <div className={ styles.cred }><Check/>Ödemtherapie</div>
+                        <div className={ styles.cred }><Check/>Atemtherapie</div>
+                        <div className={ styles.cred }><Check/>Migränetherapie</div>
+                        <div className={ styles.cred }><Check/>Akupressur</div>
+                        <div className={ styles.cred }><Check/>Beckenboden &amp; Rückentraining</div>
+                        <div className={ styles.cred }><Check/>Koordination, Ausdauer &amp; Krafttraining</div>
+                        <div className={ styles.cred }><Check/>Wellnessbehandlungen</div>
+                        <div className={ styles.cred }><Check/>Kinesiologische Tapetechniken</div>
+                        <div className={ styles.cred }><Check/>Massage</div>
+                        <div className={ styles.cred }><Check/>Ozon- / Plasma-Therapie</div>
                     </div>
                 </div>
             </div>
