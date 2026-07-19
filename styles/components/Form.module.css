@@ -1,161 +1,327 @@
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.section {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 96px 0;
 }
 
-.login_box {
-    width: 50%;
-    padding: 40px;
-    margin-bottom: 5rem;
-    background: linear-gradient(#141e30, #243b55);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-    border-radius: 10px;
+.head {
+    max-width: 1280px;
+    margin: 0 auto 64px;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 64px;
+    align-items: end;
 }
 
-.login_box h2 {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-}
-
-.login_box .user_box {
-    position: relative;
-}
-
-.login_box .user_box input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-}
-
-.login_box .user_box label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: transform .5s, color .5s, font-size .5s;
-    transform-origin: left top;
-}
-
-.login_box .user_box input:focus ~ label,
-.login_box .user_box input:valid ~ label {
-    transform: translateY(-20px);
-    color: #03e9f4;
-    font-size: 12px;
-}
-
-.login_box form button {
-    position: relative;
+.numTag {
+    font-family: var(--font-mono), monospace;
+    font-size: 13px;
+    color: var(--terra);
+    background: rgba(245, 241, 236, 0.06);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(168, 112, 63, 0.4);
     display: inline-block;
-    padding: 10px 30px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: var(--cream);
+}
+
+.accent {
+    color: var(--terra);
+}
+
+.sub {
+    color: rgba(245, 241, 236, 0.65);
+    margin-top: 16px;
+    max-width: 540px;
+    font-size: 20px;
+}
+
+.grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.infoCard {
+    border: 1px solid rgba(245, 241, 236, 0.14);
+    border-radius: 10px;
+    padding: 22px;
+    background: rgba(245, 241, 236, 0.03);
+    color: var(--cream);
+    display: block;
+    transition: border-color 0.15s;
+}
+
+.infoCard:hover {
+    border-color: rgba(245, 241, 236, 0.32);
+}
+
+.infoLbl {
+    font-family: var(--font-mono), monospace;
+    font-size: 12px;
+    color: rgba(245, 241, 236, 0.5);
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.infoVal {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--cream);
+}
+
+.highlight {
+    background: rgba(201, 138, 90, 0.1);
+    border-color: rgba(201, 138, 90, 0.4);
+}
+
+.highlight .infoVal {
+    color: var(--terra);
+}
+
+.card {
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 16px;
+}
+
+.successMessage,
+.errorMessage {
+    grid-column: 1 / -1;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.successMessage {
+    background: rgba(56, 168, 21, 0.12);
+    border: 1px solid var(--cta);
+    color: var(--cta-deep);
+}
+
+.errorMessage {
+    background: rgba(201, 138, 90, 0.15);
+    border: 1px solid var(--terra);
+    color: var(--terra-deep);
+}
+
+.toggle {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 0 4px;
+    padding: 0;
+    border: 0;
+}
+
+.legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
     overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px;
-    border: 1px solid #03e9f4;
-    background-color: transparent;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
-.login_box button:hover:not(:disabled) {
+.toggle label {
+    padding: 16px 18px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
     cursor: pointer;
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-    0 0 25px #03e9f4,
-    0 0 50px #03e9f4,
-    0 0 100px #03e9f4;
+    font-size: 16px;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s;
+    background: var(--cream);
+    font-weight: 500;
 }
 
-.login_box button:disabled {
+.toggle input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.check {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1.5px solid var(--line);
+    flex-shrink: 0;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.toggle input:checked + .check {
+    border-color: var(--ink);
+    background: var(--ink);
+}
+
+.toggle input:checked + .check::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: var(--terra);
+    border-radius: 50%;
+}
+
+.toggleActive {
+    border-color: var(--ink) !important;
+    background: var(--paper) !important;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+.field label {
+    font-family: var(--font-mono), monospace;
+    font-size: 12px;
+    color: var(--ink-2);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.field input,
+.field textarea {
+    background: var(--cream);
+    border: 1px solid var(--line-2);
+    border-radius: 6px;
+    padding: 11px 13px;
+    font: inherit;
+    font-size: 16px;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.field input:focus,
+.field textarea:focus {
+    border-color: var(--ink);
+    background: var(--paper);
+}
+
+.field textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.hint {
+    font-family: var(--font-mono), monospace;
+    font-size: 12px;
+    color: var(--ink-3);
+}
+
+.submit {
+    grid-column: 1 / -1;
+    margin-top: 12px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.submit button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    background: var(--cta);
+    color: #fff;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.2s;
+}
+
+.submit button:hover:not(:disabled) {
+    background: var(--cta-deep);
+}
+
+.submit button:disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }
 
-.login_box button:focus-visible {
-    outline: 2px solid #03e9f4;
-    outline-offset: 4px;
+.submit small {
+    color: var(--ink-2);
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 1;
+    min-width: 200px;
 }
 
-/* Fieldset for radio buttons */
-.radioFieldset {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.radioLegend {
-    color: #fff;
-    font-size: 1rem;
-    padding: 0 0.5rem;
-    font-weight: bold;
-}
-
-/* Hint text for form fields */
-.hint {
-    display: block;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.85rem;
-    margin-top: -20px;
-    margin-bottom: 10px;
-}
-
-/* Status messages */
-.successMessage {
-    background-color: #2cab29;
-    color: white;
-    padding: 1rem;
-    border-radius: 4px;
-    margin-bottom: 1.5rem;
-    border: 2px solid #25a024;
-}
-
-.errorMessage {
-    background-color: #dc3545;
-    color: white;
-    padding: 1rem;
-    border-radius: 4px;
-    margin-bottom: 1.5rem;
-    border: 2px solid #c82333;
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        margin: 0 auto;
+@media (max-width: 980px) {
+    .section {
+        padding: 64px 0;
     }
 
-    .login_box {
-        flex: 1 0 100%;
-        width: 100%;
-        padding: 20px;
+    .head {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 40px;
     }
 
-    .radioFieldset {
-        padding: 0.75rem;
+    .title {
+        font-size: 32px;
     }
-}
 
-@media (max-width: 425px) {
-    .container {
-        width: 95%;
-        margin: 0 auto;
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .toggle {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 22px;
     }
 }

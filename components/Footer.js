@@ -3,18 +3,18 @@ import styles from '../styles/components/Footer.module.css';
 
 const Footer = () => {
     return (
-        <>
-            <footer className={ styles.footer }>
+        <footer className={ styles.footer }>
+            <div className={ styles.inner }>
                 <div className={ styles.copyRight }>
-                    <p>&copy; { new Date().getFullYear() } Saim Mobilephysio</p>
+                    &copy; { new Date().getFullYear() } Saim Mobilephysio · Faranak Nokhbehzaeem
                 </div>
-                <div className={ styles.links }>
-                    <Link href={ '/' }>Home</Link>
-                    <Link href={ '/terms' }>Impressum</Link>
-                    <Link href={ '/privacy' }>Datenschutz</Link>
-                </div>
-            </footer>
-        </>
+                <nav className={ styles.links } aria-label="Footer-Navigation">
+                    <Link href="/terms">Impressum</Link>
+                    <Link href="/privacy">Datenschutz</Link>
+                    <Link href="/#kontakt">Kontakt</Link>
+                </nav>
+            </div>
+        </footer>
     );
 };
 

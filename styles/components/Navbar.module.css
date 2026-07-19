@@ -1,89 +1,174 @@
 .nav {
-    width: 90%;
-    padding-top: 1rem;
-    /*position: absolute;*/
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line-2);
 }
 
-.ul {
-    width: 100%;
+.inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 14px 24px;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
     align-items: center;
-    list-style: none;
+    justify-content: space-between;
+    gap: 24px;
 }
 
-.ul > li:not(:first-child) {
-    margin-left: 2rem;
-}
-
-/* Base styles for both logo container and buttons */
-.li {
-    font-size: .8rem;
-    text-decoration: none;
-    list-style: none;
-    padding-bottom: .5rem;
-    position: relative;
-    color: rgba(255, 255, 255, .9);
-    transition: transform .3s;
-}
-
-/* Button-specific reset and styles */
-button.li {
-    background: none;
-    border: none;
-    font-family: inherit;
-    padding: .5rem 0;
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
     cursor: pointer;
-    display: inline-block;
+    color: inherit;
+    text-align: left;
 }
 
-button.li:before {
-    content: '';
+.brandMark {
+    width: 38px;
+    height: 38px;
+    background: var(--ink);
+    color: var(--cream);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.brandName {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.brandTop {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+}
+
+.brandBot {
+    font-family: var(--font-mono), monospace;
+    font-size: 13px;
+    color: var(--ink-2);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.linkBtn {
     display: block;
-    width: 0;
-    height: 1px;
-    position: absolute;
-    background-color: transparent;
-    bottom: 0;
-    left: 0;
-    transition: width .4s ease-in-out;
+    padding: 10px 16px;
+    font-size: 17px;
+    color: var(--ink-2);
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s;
 }
 
-button.li:hover,
-button.li:focus {
-    transform: scale(1.1);
-    color: white;
-    outline: none;
+.linkBtn:hover {
+    color: var(--ink);
+    background: var(--cream);
 }
 
-button.li:hover:before,
-button.li:focus:before {
-    background-color: var(--custom-green);
+.right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cta {
+    padding: 12px 20px;
+    border-radius: 6px;
+    background: var(--cta);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.15s;
+}
+
+.cta:hover {
+    background: var(--cta-deep);
+}
+
+.toggle {
+    display: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    background: var(--ink);
+    color: var(--cream);
+    border: 0;
+    cursor: pointer;
+    place-items: center;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.mobileLink,
+.mobileCta {
+    display: block;
     width: 100%;
+    text-align: left;
+    padding: 14px 24px;
+    background: transparent;
+    border-top: 1px solid var(--line-2);
+    color: var(--ink);
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
-/* Visible focus indicator for accessibility */
-button.li:focus-visible {
-    outline: 2px solid var(--custom-green);
-    outline-offset: 4px;
-    border-radius: 2px;
+.mobileCta {
+    background: var(--cta);
+    color: #fff;
+    font-weight: 600;
 }
 
-@media (max-width: 1200px) {
-    button.li {
-        font-size: .7rem;
-    }
-}
-
-@media (max-width: 425px) {
-    /* TODO: Implement mobile hamburger menu for accessibility */
-    .ul > li:not(:first-child) {
+@media (max-width: 860px) {
+    .links,
+    .cta {
         display: none;
     }
 
+    .toggle {
+        display: grid;
+    }
+
+    .mobileMenu {
+        display: flex;
+        flex-direction: column;
+        background: var(--paper);
+        border-top: 1px solid var(--line-2);
+    }
+}
+
+@media (max-width: 440px) {
+    .brandBot {
+        display: none;
+    }
+}
+
+/* hide the sticky nav when printing (design's print layout has no nav) */
+@media print {
     .nav {
-        width: 100%;
-        padding: 1rem;
+        display: none !important;
     }
 }

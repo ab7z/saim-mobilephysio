@@ -23,14 +23,37 @@
     margin: 2rem 0 1rem;
 }
 
-@media (max-width: 425px) {
+/* Long German compound words (e.g. "Datenschutzerklärung") must wrap on narrow
+   screens instead of overflowing the viewport (page is lang="de", so hyphenate). */
+.container .heading,
+.container .h3,
+.container p,
+.container li {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 3rem 0;
+    }
     .heading {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+    .h3 {
+        font-size: 1.2rem;
+    }
+    .container p,
+    .container li {
+        font-size: 17px;
+        line-height: 1.55;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
     .heading {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }

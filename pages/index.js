@@ -1,40 +1,34 @@
-import Head from "next/head"
-import Contact from "../components/Contact"
-import Form from "../components/Form"
-import Header from "../components/Header"
-import Intro from "../components/Intro"
-import Price from "../components/Price"
-import Services from "../components/Services"
+import Seo from '../components/Seo';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Services from '../components/Services';
+import Pricing from '../components/Pricing';
+import Area from '../components/Area';
+import Testimonials from '../components/Testimonials';
+import Faq from '../components/Faq';
+import Form from '../components/Form';
+import Contact from '../components/Contact';
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, getHomeStructuredData } from '../lib/seo';
 
 export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Saim Mobilephysio - Mobile Physiotherapie in Sankt Augustin</title>
-        <meta
-          name='description'
-          content='Mobile Physiotherapie in Sankt Augustin. Professionelle Manualtherapie, Ödemtherapie und Personal Training. Hausbesuche in Sankt Augustin und Umgebung.'
-        />
-        <meta
-          property='og:title'
-          content='Saim Mobilephysio - Mobile Physiotherapie in Sankt Augustin'
-        />
-        <meta
-          property='og:url'
-          content='https://saim-mobilephysio.de'
-        />
-        <meta
-          name='twitter:title'
-          content='Saim Mobilephysio - Mobile Physiotherapie'
-        />
-      </Head>
+    return (
+        <>
+            <Seo
+                title={ DEFAULT_TITLE }
+                description={ DEFAULT_DESCRIPTION }
+                path="/"
+                structuredData={ getHomeStructuredData() }
+            />
 
-      <Header />
-      <Intro />
-      <Services />
-      <Price />
-      <Form />
-      <Contact />
-    </>
-  )
+            <Hero/>
+            <About/>
+            <Services/>
+            <Pricing/>
+            <Area/>
+            <Testimonials/>
+            <Faq/>
+            <Form/>
+            <Contact/>
+        </>
+    );
 }

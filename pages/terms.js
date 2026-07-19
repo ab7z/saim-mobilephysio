@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Seo from '../components/Seo';
 import SimpleNavbar from '../components/SimpleNavbar';
 import Contact from '../components/Contact';
 import styles from "../styles/Terms.module.css"
@@ -6,13 +6,12 @@ import styles from "../styles/Terms.module.css"
 export default function Terms() {
   return (
     <>
-      <Head>
-        <title>Impressum - Saim Mobilephysio</title>
-        <meta name='description' content='Impressum und rechtliche Informationen von Saim Mobilephysio Sankt Augustin, Faranak Nokhbehzaeem.' />
-        <meta property='og:title' content='Impressum - Saim Mobilephysio' />
-        <meta property='og:url' content='https://saim-mobilephysio.de/terms' />
-        <meta name='robots' content='noindex, follow' />
-      </Head>
+      <Seo
+        title="Impressum | Saim Mobilephysio"
+        description="Impressum und rechtliche Informationen von Saim Mobilephysio Sankt Augustin, Faranak Nokhbehzaeem."
+        path="/terms"
+        noindex
+      />
       <SimpleNavbar />
       <div className={styles.main}>
         <div className={styles.container}>
