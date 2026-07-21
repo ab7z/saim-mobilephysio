@@ -169,9 +169,9 @@ export default function Services() {
                     </p>
                 </div>
             </header>
-            <div className={ styles.grid } role="list" aria-label="Physiotherapie Leistungen">
+            <ul className={ styles.grid } role="list" aria-label="Physiotherapie Leistungen">
                 { SERVICES.map((s) => (
-                    <article className={ styles.card } key={ s.code } role="listitem">
+                    <li className={ styles.card } key={ s.code }>
                         <div className={ styles.cardHead }>
                             <span className={ styles.icon }>{ s.icon }</span>
                             <span className={ styles.tag }>{ s.roman }</span>
@@ -182,9 +182,9 @@ export default function Services() {
                             <span>{ s.code }</span>
                             <span className={ styles.price }>{ s.time || '60 min' }</span>
                         </div>
-                    </article>
+                    </li>
                 )) }
-            </div>
+            </ul>
             <p className={ styles.note }>
                 <em>*</em> 30-minütige Behandlungen werden als volle Stunde abgerechnet.
             </p>
