@@ -25,7 +25,7 @@ const FAQ = [
 
 export default function Faq() {
   return (
-    <section className={styles.section} aria-labelledby="faq-title">
+    <section className={styles.section} id="faq" aria-labelledby="faq-title">
       <header className={styles.head}>
         <div>
           <div className={styles.numTag}>FAQ</div>
